@@ -1,38 +1,44 @@
-- head: I love mathematics
+- head: In a nutshell
   body: |
-    Understanding math is an extremely satisfying feeling.
-    I find myself constantly seeking that thrill
-    through various sources.
-    The Bourbaki books are some of my favorites.
+    Hi, I’m Francesco Fabiano, a Computer Science Ph.D. passionate about AI.
+    I'm from <a href='https://en.wikipedia.org/wiki/Parma'>Parma</a>, Italy, and of course, I love good food,
+    especially when I can enjoy it with my lifelong friends.
 
-- head: I love Artificial Intelligence
+- head: My favourtite part of Academia
   body: |
-    I am deeply interested in symbolic AI and in combining it
-    with Machine Learning techniques to solve real-life problems.
+    Academia allowed to meet amazing people and work with incredible research groups.
+    Together, we’ve explored everything from epistemic planning to hybrid AI architectures inspired by human cognition.
+#, including those at Oxford University, IBM Watson Research Lab, New Mexico State University, University of Parma, and Saint Joseph’s University.
 
-- head: I love coding
+- head: Why research?
   body: |
-    Ever since I've started learning *logo*, I fell in love with programming.
-    I appreciate a clean and efficient piece of code just as much
-    as one can appreciate art, which is why I try to keep my code
-    as modular and optimal as possible.
+     I love spending my time figuring out creative ways to represent and manipulate information using logic. It’s like solving puzzles all day!
+#    When I was younger, studying wasn’t really my thing, but then I randomly stumbled upon Computer Science, and my passion for research came alive.
 
-- head: I love learning and sharing knowledge
+- head: My recent interests
   body: |
-    I am always driven to learn more, especially in mathematics,
-    which usually leads to sharing my newfound understanding
-    with colleages who (sometimes) share that interest.
+    Recently I’ve been focusing on automated planning and neuro-symbolic systems that combine the power of logic with the adaptability of machine learning.
+#    Recently, I’ve been focusing on developing AI systems that are not only smart but also trustworthy, ensuring they make correct and fair decisions.
 
-- head: I love ricing
-  body: |
-    I have embraced the minimalist linux philosophy in 2017;
-    I've spent countless hours ricing/configuring my minimalist desktop
-    environment running on Arch Linux.
-    Feel free to check out my
-    [dotfiles](https://github.com/rand-asswad/dotfiles).
+#- head: I love learning and sharing knowledge
+#  body: |
+#    I’m passionate about sharing knowledge and collaborating with others to solve complex problems,
+#    with the goal of creating AI that can truly make a positive impact on society.
 
-- head: I love music
+- head: I love running
   body: |
-    Music plays a big part of my life, I like various music genres.
-    I practice the violin since I was 8, and I enjoy mostly playing
-    in an orchestra.
+    I do a lot of running, and I especially enjoy trail-running in the hills of <a href='https://en.wikipedia.org/wiki/Calestano'>Calestano</a>—my favorite place on Earth.
+    While I’m definitely an amateur, the breathtaking views make every step worth it!
+
+- head: I love mythology
+  body: |
+    I am fascinated by mythology, especially how myths and legends shape the diverse cultures around the world.
+    Here some of my favorite sources:
+    the <a href='https://open.spotify.com/show/1g056e2x0Y9AwW6CQF3qA5?si=136b66131d614887'>*Mythology* Podcast</a>,
+    <a href='https://www.jstor.org/stable/j.ctt183pkqk'>*Kojiki*</a>, and
+    <a href='https://www.youtube.com/playlist?list=PLJicmE8fK0EjW2AVwcSc4NvGyJJaw7bzh'>Ted-ED playlist</a>.
+#      - <a href='https://open.spotify.com/show/1g056e2x0Y9AwW6CQF3qA5?si=136b66131d614887'>*Mythology* Podcast</a>, the best all-around source to approach mythology in my opinon
+#      - <a href='https://www.jstor.org/stable/j.ctt183pkqk'>*Kojiki* translated by Donald L. Philippi</a> (japanese mythology)
+#      - <a href='https://www.youtube.com/playlist?list=PLJicmE8fK0EjW2AVwcSc4NvGyJJaw7bzh'>Ted-ED Youtube playlist on a lot of myths</a>
+#      - <a href='https://www.tolkienguide.com/store/9780063280779'>*The Silmarillion* by Tolkien, J.R.R.</a> (fantastical mythology)
+#I immerse myself in mythology through books, podcasts, and YouTube videos.

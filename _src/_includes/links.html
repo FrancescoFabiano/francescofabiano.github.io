@@ -1,7 +1,27 @@
 <ul class="link-icons horizontal">
   <li>
-    <a href="mailto:{{ site.data.contact.email }}" class="icon" aria-label="e-mail">
-      {% include icons/mail.svg %}
+    <li>
+      <a href="mailto:{{ site.data.contact.email }}" class="icon" aria-label="e-mail">
+        {% include icons/mail.svg %}
+      </a>
+    </li>
+    <a href="https://dblp.org/pid/{{ site.data.contact.dblp }}" target="_blank" class="icon" aria-label="dblp">
+      {% include icons/dblp.svg %}
+    </a>
+  </li>
+  <li>
+    <a href="https://scholar.google.com/citations?user={{ site.data.contact.googlescholar }}" target="_blank" class="icon" aria-label="googlescholar">
+      {% include icons/googlescholar.svg %}
+    </a>
+  </li>
+  <li>
+    <a href="https://arxiv.org/a/{{ site.data.contact.arxiv }}" target="_blank" class="icon" aria-label="arxiv">
+      {% include icons/arxiv.svg %}
+    </a>
+  </li>
+  <li>
+    <a href="https://orcid.org/{{ site.data.contact.orcid }}" target="_blank" class="icon" aria-label="orcid">
+      {% include icons/orcid.svg %}
     </a>
   </li>
   <li>

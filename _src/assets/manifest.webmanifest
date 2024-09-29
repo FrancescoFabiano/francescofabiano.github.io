@@ -1,6 +1,6 @@
 {
-  "name": "Rand Asswad",
-  "short_name": "Rand Asswad",
+  "name": "Francesco Fabiano",
+  "short_name": "Francesco Fabiano",
   "start_url": "../",
   "display": "minimal-ui",
   "theme_color": "#25274d",
@@ -22,11 +22,11 @@
   "shortcuts": [
     {
       "name": "English CV",
-      "url": "/rand_asswad_cv_en.pdf"
+      "url": "/ffabiano_cv.pdf"
     },
     {
-      "name": "French CV",
-      "url": "/rand_asswad_cv_fr.pdf"
+      "name": "PhD Thesis CV",
+      "url": "/ffabiano_phd_thesis.pdf"
     }
   ]
 }

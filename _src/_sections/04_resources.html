@@ -1,23 +1,23 @@
 ---
-title: portfolio
-order: "05"
+title: resources
+order: "04"
 ---
 
-<h1 class="section-header">Projects</h1>
-<div id="projects" class="tabs-container">
+<h1 class="section-header">Resources</h1>
+<div id="resources" class="tabs-container">
   <div class="tabs">
-    {% for p in site.data.projects %}
+    {% for p in site.data.resources %}
       <a href="#proj{% increment tabLink %}" class="tab">{{ p.title }}</a>
     {% endfor %}
   </div>
   <div class="tabs-content">
-    {% for p in site.data.projects %}
+    {% for p in site.data.resources %}
       <div class="content" id="proj{% increment tab %}">
         <div class="tab-title">
           <div class="icons">
             {% if p.github %}<a href="{{ p.github }}" target="_blank" class="icon" aria-label="GitHub">{% include icons/github.svg %}</a>{% endif %}
-            {% if p.pdf %}<a href="{{ p.link }}/{{ p.pdf }}" target="_blank" class="icon" aria-label="project PDF report">{% include icons/pdf.svg %}</a>{% endif %}
-            {% if p.link %}<a href="{{ p.link }}" target="_blank" class="icon" aria-label="Project link">{% include icons/external-link.svg %}</a>{% endif %}
+            {% if p.pdf %}<a href="{{ p.pdf }}" target="_blank" class="icon" aria-label="resource PDF report">{% include icons/pdf.svg %}</a>{% endif %}
+            {% if p.link %}<a href="{{ p.link }}" target="_blank" class="icon" aria-label="resource link">{% include icons/external-link.svg %}</a>{% endif %}
           </div>
           <h1>{{ p.long_title }}</h1>
         </div>

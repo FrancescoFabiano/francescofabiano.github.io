@@ -1,6 +1,6 @@
 ---
 title: education
-order: "02"
+order: "03"
 ---
 
 <h1 class="section-header">Education</h1>
@@ -11,6 +11,7 @@ order: "02"
       <div class="accordeon-content">
         <h2 class="accordeon-subtitle">{{ e.date }}</h2>
         <p>{{ e.description | markdownify }}</p>
+        <hr>
       </div>
     </div>
   {% endfor %}

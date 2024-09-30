@@ -1,0 +1,82 @@
+- title: PRIMA '24
+  long_title: Supplementary Documentation for PRIMA 2024
+  date: September 2024
+#  github: https://github.com/rand-asswad/muallef
+#  link: https://rand-asswad.github.io/muallef
+  pdf: ../assets/2024_prima_suppl.pdf
+  description: |
+    The following document contains supplementary information for the paper
+    <i>H-EFP: Bridging Efficiency in Multi-Agent Epistemic Planning with Heuristics</i>
+    submitted to <b>The 25th International Conference on Principles and Practice of
+    Multi-Agent Systems</b> (PRIMA 2024).
+
+    <br> Click the pdf icon in the top-left corner or <a href='../assets/2024_prima_suppl.pdf' target="_blank">Here</a> to view it.
+
+  tags:
+    - research
+    - multi-agent
+    - planning
+    - epistemic
+    - supplementary
+    - documentation
+    - prima
+
+
+- title: Ph.D. Thesis
+  long_title: <i>Planning while Believing to Know</i>
+  date: October 2021
+#  github: https://github.com/rand-asswad/muallef
+#  link: https://rand-asswad.github.io/muallef
+  pdf: ../assets/ffabiano_phd_thesis.pdf
+  description: |
+    The following document contains my Ph.D. Thesis titled <i>Planning while Believing to Know</i>.
+
+    <br> Click the pdf icon in the top-left corner or <a href='../assets/ffabiano_phd_thesis.pdf' target="_blank">Here</a> to view it.
+
+  tags:
+    - research
+    - multi-agent
+    - planning
+    - epistemic
+    - phd
+    - thesis
+
+
+- title: Master's Thesis
+  long_title: "<i>EFP and PG-EFP: Epistemic Forward Planners in Multi-Agent Domains</i>"
+  date: May 2018
+#  github: https://github.com/rand-asswad/muallef
+#  link: https://rand-asswad.github.io/muallef
+  pdf: ../assets/ffabiano_master_thesis.pdf
+  description: |
+    The following document contains my Master of Science Thesis titled <i>EFP and PG-EFP: Epistemic Forward Planners in Multi-Agent Domains</i>.
+
+    <br> Click the pdf icon in the top-left corner or <a href='../assets/ffabiano_master_thesis.pdf' target="_blank">Here</a> to view it.
+
+  tags:
+    - research
+    - multi-agent
+    - planning
+    - epistemic
+    - master
+    - thesis
+
+- title: Bachelor's Thesis
+  long_title: <i>Load Distribution Analysis in an MPI Framework</i>
+  date: December 2016
+#  github: https://github.com/rand-asswad/muallef
+#  link: https://rand-asswad.github.io/muallef
+  pdf: ../assets/ffabiano_bachelor_thesis.pdf
+  description: |
+    The following document contains my Master of Science Thesis titled <i>Load Distribution Analysis in an MPI Framework</i>.
+    Unfortunately, this thesis is only available in Italian, sorry!
+
+    <br> Click the pdf icon in the top-left corner or <a href='../assets/ffabiano_bachelor_thesis.pdf' target="_blank">Here</a> to view it.
+
+  tags:
+    - research
+    - mpi
+    - cuda
+    - segmentation
+    - bachelor
+    - thesis

@@ -1,40 +1,76 @@
-- school: Université Grenoble Alpes / MSTII
-  degree: PhD in Applied Mathematics
-  date: October 2022 - present
-  link: https://doctorat.univ-grenoble-alpes.fr/
+- school: University of Oxford
+  degree: PostDoc
+  date: Jnauary 2025 - Today
+  link: https://www.ox.ac.uk/
   description: |
-    Studied mathematical modelling of microbiological systems, nonlinear systems
-    state observation and control through literature and followed courses.
+   Researcher in  UKRI AI Hub at the University of Oxford which is focused on investigating the Computational Foundations of AI, with particular focus on Understanding Understanding Decision Making.
+   
+   <ul class="list grid-list">
+    <li> Advisor: Alessandro Abate</li>
+   </ul>
 
-#- school: Université de Lorraine
-#  degree: Fundamental and Applied Mathematics
-#  date: September 2021 - August 2022
-#  link: https://iecl.univ-lorraine.fr/master-2-mfa/
-#  description: |
-#    Research-oriented Master's program with focus on
-#    PDEs, Lie Algebras, and Control Theory.
 
-- school: INSA Rouen Normandie
-  degree: Mathematical Engineering
-  date: September 2014 - August 2021
-  link: https://www.insa-rouen.fr/en/education/engineering-specialization/mathematical-and-software-engineering
+- school: IBM Watson Research Lab
+  degree: Joint Study
+  date: April 2020 - Today
+  link: https://research.ibm.com/labs/yorktown-heights
   description: |
-    French graduate engineering program (Diplôme d'Ingénieur)
-    with focus on applied mathematics and computer science.
+    Part of an IBM Watson Research Lab Group, led by Dr. Rossi, comprised of researchers from IBM
+    and various universities.
+    With this research group, we are analyzing well-known cognitive theories to define a general AI paradigm
+    starting from cognitive theories such as the one popularized by D. Kahneman in his book <a target="_blank" href='https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow'><i>Thinking Fast and Slow</i></a>.
+    
+    <ul class="list naked-list">
+    <li> Advisor: Francesca Rossi</li>
+    </ul>
 
-- school: Université de Rouen
-  degree: Theoretical and Applied Computer Science
-  date: September 2019 - August 2020
-  link: https://dpt-info-sciences.univ-rouen.fr/index.php/accueil-mita
+- school: University of Udine
+  degree: Ph.D. in Computer Science
+  date: November 2018 - October 2021
+  link: https://www.dmif.uniud.it/en/phd-courses/imf/
   description: |
-    Research-oriented Master's program with focus on algebra, theoretical
-    computer science, and preparation for PhD.
+    Ph.D. focused on formalizing and developing tools for planning in multi-agent scenarios involving higher-order knowledge or beliefs.
+    Research thesis title: <a target="_blank" href='../assets/ffabiano_phd_thesis.pdf'><i>Planning while Believing to Know</i></a>.
 
-- school: Little Village School
-  degree: Syrian Scientific Baccalaureate
-  date: June 2013
-  link: https://www.littlevillageschool.com/
+    <ul class="list naked-list">
+    <li> Award: Best Ph.D. Thesis Award by GULP, 2022</li>
+    <li> Advisors: Agostino Dovier, Alessandro Dal Palù, and Enrico Pontelli</li>
+    <li> Final Mark: cum Laude</li>
+    </ul>
+
+- school: New Mexico State University
+  degree: Master's Degree in Computer Science
+  date: January 2017 - May 2018
+  link: https://computerscience.nmsu.edu/
   description: |
-    Rich school program that gave me a head start in later studies.
+    Master of Science program specializing in logic, declarative programming, automated planning, with a strong emphasis on producing research papers.
+    Research thesis title: <a target="_blank" href='../assets/ffabiano_master_thesis.pdf'><i>EFP and PG-EFP: Epistemic Forward Planners in Multi-Agent Domains</i></a>.
+   
+    <ul>
+    <li> Advisor: Enrico Pontelli</li>
+    <li>Final GPA: 3.88</li>
+    </ul>
 
-    Graduation grade 92.17%
+- school: University of Parma
+  degree: Bachelor’s Degree in Computer Science
+  date: October 2013 - December 2016
+  link: https://corsi.unipr.it/en/cdl-info
+  description: |
+    Bachelor of Science program with an emphasis on theoretical computer science, logic, and foundational aspects of Artificial Intelligence, along with research fundamentals.
+    Research thesis title: <a target="_blank" href='../assets/ffabiano_bachelor_thesis.pdf'><i>Load Distribution Analysis in an MPI Framework</i></a>.
+    
+    <ul>
+    <li> Advisor: Alessandro Dal Palù</li>
+    <li> Final Mark: 109/110</li>
+    </ul>
+
+- school: Liceo Scientifico G. Marconi
+  degree: Scientific High School Diploma
+  date: September 2008 - June 2013
+  link: https://www.liceomarconipr.edu.it/
+  description: |
+    Comprehensive program that provided a strong foundation in mathematics and helped me develop effective study skills.
+
+    <ul>
+    <li> Final Mark: 96/100</li>
+    </ul>

@@ -1,77 +1,102 @@
-- company: INRIA
-  company_w_location: Inria Grenoble – Rhône-Alpes
-  link: https://www.inria.fr/en/inria-centre-university-grenoble-alpes
-  title: PhD Student
-  date: October 2022 - ongoing
+- company: Oxford
+  company_w_location: University of Oxford
+  link: https://www.ox.ac.uk/
+  title: Research Associate
+  date: January 2025 - Today
   description: |
-    Working on control of microorganisms communities, as a member of the
-    [Microcosme](https://team.inria.fr/microcosme) project-team.
+   Researcher in  UKRI AI Hub at the University of Oxford which is focused on
+    investigating the Computational Foundations of AI, with particular focus on Understanding Understanding Decision Making.
 
-    Investigated nonlinear systems of bacteria and microalgae through mathematical
-    analysis and simulation.
-    Currently designing observers for such systems for future development of
-    feedback control of algal-bacterial consortia, through classical control
-    strategies and data-driven approaches.
 
-- company: UGA
-  company_w_location: Université Grenoble Alpes 
-  link: https://www.univ-grenoble-alpes.fr
-  title: Teaching Assistant
-  date: September 2022 - ongoing
+- company: IBM
+  company_w_location: IBM Research
+  link: https://research.ibm.com/labs/yorktown-heights
+  title: Joint Researcher
+  date: April 2020 - Today
   description: |
-    Teaching mathematics and computer science at a Bachelor's level.
-    - Course (16 hours): Fundamental mathematical tools for life sciences, L1, Life Sciences.
-    - Practical class (18 hours): Applied mathematics: image processing, L1, Computer Science.
-- company: L2S
-  company_w_location: Laboratory of Signals and Systems (Centralesupelec, CNRS)
-  link: https://l2s.centralesupelec.fr/en/
-  title: Research Intern
-  date: November 2020 - June 2021
+    Part of an IBM Watson Research Lab Group, led by Dr. Rossi, comprised of researchers from IBM
+    and various universities.
+    With this research group, we are analyzing well-known cognitive theories to define a general AI paradigm
+    starting from cognitive theories such as the one popularized by D. Kahneman in his book <a target="_blank" href='https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow'><i>Thinking Fast and Slow</i></a>.
+
+- company: NMSU
+  company_w_location: New Mexico State University
+  link: https://www.nmsu.edu/
+  title: Assistant Professor
+  date: August 2023 - August 2024
   description: |
-    Worked on a bio-inspired geometric model for sound reconstruction.
-    The spectrum of the degraded sound is lifted in the Heisenberg group
-    and reconstructed via the Wilson-Cowan differo-integral equation.
-
-    Contributed to an [article](https://doi.org/10.1007/978-3-030-80209-7_7)
-    published in the [GSI 2021](https://www.see.asso.fr/en/GSI2021) conference proceedings.
-
-    Improved and extended the [implementation](https://github.com/rand-asswad/WCA1)
-    of the proposed model, and ran experiments on a library of speech recordings.
-
-    This internship concluded my Master's degree at INSA Rouen Normandie
-    ([published report](https://rand-asswad.xyz/WCA1-docs/)).
-
-- company: INRIA
-  company_w_location: Inria Nancy Grand-Est
-  link: https://www.inria.fr/en/centre/nancy
-  title: Research Intern
-  date: June - August 2019
-  description: |
-    Contributed to the [Mind the Gap!](http://www.sciencedirect.com/science/article/pii/S0010448518302215)
-    algorithm developed by [Pixel team](https://pixel.inria.fr) that proposes a robust pipeline
-    for generating hexahedral-dominant meshes from any global parametrization of a tetrahedral mesh.
+    Structured and taught undergraduate and graduate courses at the Computer Science Department.
+    Furthermore, I focused on research in neuro-symbolic AI, automated planning, multi-agent epistemic reasoning, and computational logic.
     
-    Proposed and implemented improvements to the pipeline that helped obtain better meshes with
-    less irregularities.
+    <p style='color: var(--theme-primary);'><b>Courses</b></p>
+    <ul>
+      <li> <i>Applied Machine Learning I</i> (CS 487/519) </li>
+      <li> <i>Analysis of Algorithms</i> (CS 570) </li>
+      <li> <i>Parallel Programming</i> (CS 491/521) </li>
+      <li> <i>Python Programming I</i> (CS 153/453) </li>
+      <li> <i>C++ Programming</i> (CS 151/451) </li>
+    </ul>
 
-- company: INSA
-  company_w_location: INSA Rouen Normandie
-  link: https://www.insa-rouen.fr
-  title: Web Development Intern
-  date: July - September 2017
+- company: SJU
+  company_w_location: Saint Joseph’s University
+  link: https://www.sju.edu/
+  title: Adjunct Professor
+  date: January - July 2023
   description: |
-    Established a Proof of Concept of a web client of the free software [AMC](https://www.auto-multiple-choice.net/)
-    that creates and manages multiple choice questionnaires (MCQ) as it is only available on UNIX systems.
+    Structured and taught the undergraduate and graduate courses offered by the <i>Decision & System Sciences</i> curriculum at
+    the <i>Erivan K. Haub School of Business</i>.
+    Moreover, I focused on research in neuro-symbolic AI, automated planning, and computational logic.
 
-    Implemented a Django web application that communicates with AMC on the server side.
+    <p style='color: var(--theme-primary);'><b>Courses</b></p>
+    <ul>
+      <li> <i>Advanced Python Programming</i> (DSS 770) </li>
+      <li> <i>BIA: Concepts & Practices</i> (DSS 315) </li>
+      <li> <i>Advanced Python Programming</i> (DSS 693) </li>
+      <li> <i>Python Programming</i> (DSS 615) </li>
+    </ul>
 
-- company: CAFDA
-  company_w_location: CAFDA
-  link: https://fr.wikipedia.org/wiki/Coordination_de_l%27accueil_des_familles_demandeuses_d%27asile
-  title: Volunteer Translator
-  date: July - August 2016
+
+- company: UniPR
+  company_w_location: University of Parma
+  link: https://www.unipr.it/en
+  title: Adjunct Professor
+  date: October 2022 - September 2023
   description: |
-    Volunteered as a French-Arabic translator for asylum-seekers.
+    Structured and taught the undergraduate course <i>Typing in LaTeX</i>, open to all the students of the University.
+    The course was designed to help the students acquire the necessary capabilities to realize documents using the typesetting language LaTeX.
+    The teaching was comprised of 24 hours (equivalent to 3 Italian credits) of frontal lectures and exercises.
+    Finally, the evaluation was based on a project.
 
-    The CAFDA is an organization that receives asylum-seeking families and accompanies them in their
-    asylum demand procedure and in their access to social rights.
+    <p style='color: var(--theme-primary);'><b>Courses</b></p>
+    <ul>
+      <li> <i>Typing in LaTeX</i> </li>
+    </ul>
+
+- company: ACMI
+  company_w_location: ACMI S.P.A. & University of Parma
+  link: https://www.acmispa.it/
+  title: Research Fellowship
+  date: January 2021 - December 2022
+  description: |
+    <b style='color: var(--theme-primary);'>Research Title:</b> <i>Artificial Intelligence for packaging production line</i>.
+    <br>Implemented an automated reasoning tool that makes use of innovative techniques
+    (e.g., constraint programming, planning, etc.) to model production processes and that returns
+    an optimized and safe plan that controls the robotic components in the production line.
+
+- company: NMSU
+  company_w_location: New Mexico State University
+  link: https://www.nmsu.edu/
+  title: Web Master
+  date: August 2017 - May 2018
+  description: |
+    Migrated the website of the College of Arts and Sciences to a user-friendly platform to simplify the College’s staff work.
+    After the migration, support and maintenance for the website was provided.
+
+- company: NMSU
+  company_w_location: New Mexico State University
+  link: https://www.nmsu.edu/
+  title: Research Assistant
+  date: January - July 2017
+  description: |
+    Studied, under Prof. Enrico Pontelli, the design of an epistemic forward planner with particular
+    attention to heuristics for the solving process and optimizations for the underlying knowledge representation.

@@ -29,7 +29,7 @@
     Furthermore, I focused on research in neuro-symbolic AI, automated planning, multi-agent epistemic reasoning, and computational logic.
     
     <p style='color: var(--theme-primary);'><b>Courses</b></p>
-    <ul>
+    <ul class="list naked-list" style="font-size: 15px">
       <li> <i>Applied Machine Learning I</i> (CS 487/519) </li>
       <li> <i>Analysis of Algorithms</i> (CS 570) </li>
       <li> <i>Parallel Programming</i> (CS 491/521) </li>
@@ -48,7 +48,7 @@
     Moreover, I focused on research in neuro-symbolic AI, automated planning, and computational logic.
 
     <p style='color: var(--theme-primary);'><b>Courses</b></p>
-    <ul>
+    <ul class="list naked-list" style="font-size: 15px">
       <li> <i>Advanced Python Programming</i> (DSS 770) </li>
       <li> <i>BIA: Concepts & Practices</i> (DSS 315) </li>
       <li> <i>Advanced Python Programming</i> (DSS 693) </li>
@@ -68,7 +68,7 @@
     Finally, the evaluation was based on a project.
 
     <p style='color: var(--theme-primary);'><b>Courses</b></p>
-    <ul>
+    <ul class="list naked-list" style="font-size: 15px">
       <li> <i>Typing in LaTeX</i> </li>
     </ul>
 

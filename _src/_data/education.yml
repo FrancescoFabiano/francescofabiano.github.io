@@ -5,7 +5,7 @@
   description: |
    Researcher in  UKRI AI Hub at the University of Oxford which is focused on investigating the Computational Foundations of AI, with particular focus on Understanding Understanding Decision Making.
    
-   <ul class="list grid-list">
+    <ul class="list naked-list" style="font-size: 15px">
     <li> Advisor: Alessandro Abate</li>
    </ul>
 
@@ -20,7 +20,7 @@
     With this research group, we are analyzing well-known cognitive theories to define a general AI paradigm
     starting from cognitive theories such as the one popularized by D. Kahneman in his book <a target="_blank" href='https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow'><i>Thinking Fast and Slow</i></a>.
     
-    <ul class="list naked-list">
+    <ul class="list naked-list" style="font-size: 15px">
     <li> Advisor: Francesca Rossi</li>
     </ul>
 
@@ -32,11 +32,12 @@
     Ph.D. focused on formalizing and developing tools for planning in multi-agent scenarios involving higher-order knowledge or beliefs.
     Research thesis title: <a target="_blank" href='../assets/ffabiano_phd_thesis.pdf'><i>Planning while Believing to Know</i></a>.
 
-    <ul class="list naked-list">
-    <li> Award: Best Ph.D. Thesis Award by GULP, 2022</li>
-    <li> Advisors: Agostino Dovier, Alessandro Dal Palù, and Enrico Pontelli</li>
-    <li> Final Mark: cum Laude</li>
+    <ul class="list naked-list" style="font-size: 15px">
+        <li>Award: Best Ph.D. Thesis Award by GULP, 2022</li>
+        <li>Advisors: Agostino Dovier, Alessandro Dal Palù, and Enrico Pontelli</li>
+        <li>Final Mark: cum Laude</li>
     </ul>
+
 
 - school: New Mexico State University
   degree: Master's Degree in Computer Science
@@ -46,7 +47,7 @@
     Master of Science program specializing in logic, declarative programming, automated planning, with a strong emphasis on producing research papers.
     Research thesis title: <a target="_blank" href='../assets/ffabiano_master_thesis.pdf'><i>EFP and PG-EFP: Epistemic Forward Planners in Multi-Agent Domains</i></a>.
    
-    <ul>
+    <ul class="list naked-list" style="font-size: 15px">
     <li> Advisor: Enrico Pontelli</li>
     <li>Final GPA: 3.88</li>
     </ul>
@@ -59,7 +60,7 @@
     Bachelor of Science program with an emphasis on theoretical computer science, logic, and foundational aspects of Artificial Intelligence, along with research fundamentals.
     Research thesis title: <a target="_blank" href='../assets/ffabiano_bachelor_thesis.pdf'><i>Load Distribution Analysis in an MPI Framework</i></a>.
     
-    <ul>
+    <ul class="list naked-list" style="font-size: 15px">
     <li> Advisor: Alessandro Dal Palù</li>
     <li> Final Mark: 109/110</li>
     </ul>
@@ -71,6 +72,6 @@
   description: |
     Comprehensive program that provided a strong foundation in mathematics and helped me develop effective study skills.
 
-    <ul>
+    <ul class="list naked-list" style="font-size: 15px">
     <li> Final Mark: 96/100</li>
     </ul>

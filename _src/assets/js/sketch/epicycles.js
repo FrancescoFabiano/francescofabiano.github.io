@@ -102,6 +102,7 @@ class FourierSketch {
     this.vectors.setAttribute("stroke-width", ".3");
     this.path.setAttribute("fill", "none");
     this.path.setAttribute("stroke", "black");
+    this.path.setAttribute("stroke-width", "0");
     for (let n = 0; n < this.coefs.length; n++) {
       this.cycle.push(this.epicycles.createElement("circle", {id: this.coefs.index}));
       this.vector.push(this.vectors.createElement("line"));

@@ -23,7 +23,7 @@
 
 
 - title: Ph.D. Thesis
-  long_title: <i>Planning while Believing to Know</i>
+  long_title: My Ph.D. thesis titled <i>Planning while Believing to Know</i>
   date: October 2021
 #  github: https://github.com/rand-asswad/muallef
 #  link: https://rand-asswad.github.io/muallef
@@ -42,8 +42,8 @@
     - thesis
 
 
-- title: Master's Thesis
-  long_title: "<i>EFP and PG-EFP: Epistemic Forward Planners in Multi-Agent Domains</i>"
+- title: Master Thesis
+  long_title: "My master thesis titled <i>EFP and PG-EFP: Epistemic Forward Planners in Multi-Agent Domains</i>"
   date: May 2018
 #  github: https://github.com/rand-asswad/muallef
 #  link: https://rand-asswad.github.io/muallef
@@ -61,8 +61,8 @@
     - master
     - thesis
 
-- title: Bachelor's Thesis
-  long_title: <i>Load Distribution Analysis in an MPI Framework</i>
+- title: Bachelor Thesis
+  long_title: My bachelor thesis titled <i>Load Distribution Analysis in an MPI Framework</i>
   date: December 2016
 #  github: https://github.com/rand-asswad/muallef
 #  link: https://rand-asswad.github.io/muallef
@@ -80,3 +80,22 @@
     - segmentation
     - bachelor
     - thesis
+
+- title: CV
+  long_title: My Curriculum Vitae
+  date: Today
+#  github: https://github.com/rand-asswad/muallef
+#  link: https://rand-asswad.github.io/muallef
+  pdf: ../assets/ffabiano_cv.pdf
+  description: |
+    The following document contains my Curriculum Vitae.
+
+    <br> Click the pdf icon in the top-left corner or <a href='../assets/ffabiano_cv.pdf' target="_blank">Here</a> to view it.
+
+  tags:
+    - cv
+    - resume
+    - research
+    - work
+    - publications
+

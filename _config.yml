@@ -7,8 +7,8 @@ destination:  ./_site
 # meta
 title: Francesco Fabiano
 description: | # appears in search engines preview (keep it under 120 chars)
-  Francesco Fabiano is a Computer Scientist specialized in neuro-symbolic AI, multi-agenst systems, and epistemology.
-  He is currently part of the UKRI AI Hub at the University of Oxford.
+  Francesco Fabiano is a Computer Scientist specialized in neuro-symbolic AI, multi-agent systems, and epistemology.
+# He is currently part of the UKRI AI Hub at the University of Oxford.
 # jekyll collections
 collections:
   - sections

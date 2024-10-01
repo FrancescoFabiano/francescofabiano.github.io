@@ -4,4 +4,26 @@ order: "04"
 ---
 
 <h1 class="section-header">Publications</h1>
-<script src="https://bibbase.org/show?bib=https://dblp.org/pid/221/6112.bib&noBootstrap=1&jsonp=1&theme=mila&showSearch=true" async></script>
+
+<!-- In your HTML -->
+<div id="script-loading">Loading content...</div>
+<div id="rendered-content" style="display: none;"></div>
+
+<!-- Your external script -->
+<script defer src="https://bibbase.org/show?bib=https://dblp.org/pid/221/6112.bib&noBootstrap=1&jsonp=1&theme=mila&showSearch=true"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var loadingElement = document.getElementById('script-loading');
+    var contentElement = document.getElementById('rendered-content');
+
+    // Custom event triggered by your script when it's ready to display content
+    window.addEventListener('scriptLoaded', function() {
+      loadingElement.style.display = 'none';
+      contentElement.style.display = 'block';
+    });
+
+    // This could be triggered by your script when rendering starts
+    window.dispatchEvent(new Event('scriptLoaded'));
+  });
+</script>

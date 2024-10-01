@@ -33,12 +33,24 @@ section .section-header, section > h1 {
   margin-block-end: 2rem;
 }
 
-// offset section anchor links
+/* // offset section anchor links
 section:target::before {
   content: '';
   display: block;
   height: calc(#{$header-height} + 15vh);
   margin-top: calc(0px - (#{$header-height} + 15vh));
+  @media (max-width: $sm) {
+    height: $header-height;
+    margin-top: -$header-height;
+  }
+} */
+
+// offset section anchor links
+section:target::before {
+  content: '';
+  display: block;
+  height: calc(#{$header-height} + var(--header-height-offset));
+  margin-top: calc(0px - (#{$header-height} + var(--header-height-offset)));
   @media (max-width: $sm) {
     height: $header-height;
     margin-top: -$header-height;

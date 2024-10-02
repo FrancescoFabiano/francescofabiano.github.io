@@ -2,6 +2,10 @@
     color: #000000 !important;
 }
 
+#bibbase_body {
+    font-size: 15px !important;
+}
+
 .bibbase_paper_title {
     color: var(--theme-primary) !important;
 }
@@ -24,7 +28,7 @@
       border: none;
       box-shadow: none;
     }
-  }
+}
 
 /* // Filters on black generated through https://isotropic.co/tool/hex-color-to-css-filter/
 .filter-primary{ 

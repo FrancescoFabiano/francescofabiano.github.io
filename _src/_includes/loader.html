@@ -1,6 +1,28 @@
-<div class="loader"><span></span></div>
+<!-- <div class="loader"><span></span></div>
 <script type="text/javascript">
   window.addEventListener("load", (e) => {
     document.querySelector(".loader").remove();
   }, { once:true });
+</script> -->
+
+<script type="text/javascript">
+    // Use a MutationObserver to monitor the presentation div for changes
+    const presentationObserver = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.addedNodes.length > 0) {
+                // Check if the presentation is now visible
+                if (document.getElementById('education_nav').style.display === 'block') {
+                    // Hide the loader
+                    document.querySelector('.loader').remove();
+                    presentationObserver.disconnect(); // Stop observing after loader is removed
+                }
+            }
+        });
+    });
+
+    // Start observing the #presentation div for changes
+    presentationObserver.observe(document.getElementById('education_nav'), { childList: true, subtree: true });
+
+    // Load additional presentation if needed
+    // e.g., you can append more nodes here later to trigger the observer
 </script>

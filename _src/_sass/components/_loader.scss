@@ -8,7 +8,8 @@ $loader-border-width: 8px;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: var($--theme-background);
+  // background: var($--theme-background);
+  background: rgb(37, 39, 77, 0.5)  ; // Semi-transparent white background (50% opacity) -- Ceated from primary with "https://rgbacolorpicker.com/hex-to-rgba"
   display: flex;
   justify-content: center;
   align-items: center;

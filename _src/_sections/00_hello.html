@@ -4,22 +4,25 @@ order: "00"
 class: wide
 ---
 
-<a href="#hello"></a>
-
 <!-- Add a hidden image tag for fetchpriority -->
-<img src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high" height="400px" widht="auto" alt="Francesco's profile picture">
-
-
-<!--
 <img src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high" style="display: none;" alt="Preloaded background image">
-<div id="sketch-container">
-  <div id="sketch-holder" style="background-image: url('../assets/pic/picture/pic_refined_colored.png'); background-size: contain; background-position: center; background-repeat: no-repeat; width: 100%; height: 100vh;">
-  </div>!-->
-  <!--div>
-    <input id="nbCoefs" type="range" min="1" max="100" value="100" class="slider">
-  </div-->
-<!--</div>-->
 
+<div id="sketch-container">
+  <div style="background-image: url('../assets/pic/picture/pic_refined_colored.png');
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              width: 100%;
+              height: 100vh;"
+        id="sketch-holder">
+  </div> 
+</div>
+<!--This is inside the sketch-container <div>
+  <input id="nbCoefs" type="range" min="1" max="100" value="100" class="slider">
+</div>
+ -->
+
+ <!-- <img src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high" height="400px" widht="auto" alt="Francesco's profile picture"> -->
 
 
 <div id="hello-text">

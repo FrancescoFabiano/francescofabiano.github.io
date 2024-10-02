@@ -23,3 +23,11 @@ section#hello {
     margin-block-end: 2rem;
   }
 }
+
+
+
+#profile_pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

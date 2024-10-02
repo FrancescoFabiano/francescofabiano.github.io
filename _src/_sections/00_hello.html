@@ -5,7 +5,7 @@ class: wide
 ---
 
 <!-- Add a hidden image tag for fetchpriority -->
-<img src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high" style="display: none;" alt="Preloaded background image">
+<!-- <img src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high" style="display: none;" alt="Preloaded background image">
 
 <div id="sketch-container">
   <div style="background-image: url('../assets/pic/picture/pic_refined_colored.png');
@@ -16,13 +16,49 @@ class: wide
               height: 100vh;"
         id="sketch-holder">
   </div> 
-</div>
+</div> -->
 <!--This is inside the sketch-container <div>
   <input id="nbCoefs" type="range" min="1" max="100" value="100" class="slider">
 </div>
  -->
 
- <!-- <img src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high" height="400px" widht="auto" alt="Francesco's profile picture"> -->
+ <style>
+  .fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+</style>
+<div class="fade-in-image">
+  <img  src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high" height="400px" widht="auto" alt="Francesco's profile picture">
+</div>
 
 
 <div id="hello-text">

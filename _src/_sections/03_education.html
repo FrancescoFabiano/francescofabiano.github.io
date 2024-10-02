@@ -4,7 +4,7 @@ order: "03"
 ---
 
 <h1 class="section-header">Education</h1>
-<div class="accordeon">
+<div class="accordeon" id="education_nav">
   {% for e in site.data.education %}
     <div class="accordeon-item">
       <h1 class="accordeon-title">{{ e.degree }} <a href="{{ e.link }}" target="_blank">@ {{ e.school }}</a></h1>

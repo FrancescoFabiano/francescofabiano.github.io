@@ -3,12 +3,11 @@
   date: Jnauary 2025 - Today
   link: https://www.ox.ac.uk/
   description: |
-   Researcher in  UKRI AI Hub at the University of Oxford which is focused on investigating the Computational Foundations of AI, with particular focus on Understanding Understanding Decision Making.
-   
-    <ul class="list naked-list" style="font-size: 15px">
-    <li> Advisor: Alessandro Abate</li>
-   </ul>
+    Researcher in  UKRI AI Hub at the University of Oxford which is focused on investigating the Computational Foundations of AI, with particular focus on Understanding Understanding Decision Making.
 
+     <ul class="list naked-list" style="font-size: 15px">
+     <li> Advisor: Alessandro Abate</li>
+    </ul>
 
 - school: IBM Watson Research Lab
   degree: Joint Study
@@ -19,7 +18,7 @@
     and various universities.
     With this research group, we are analyzing well-known cognitive theories to define a general AI paradigm
     starting from cognitive theories such as the one popularized by D. Kahneman in his book <a target="_blank" href='https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow'><i>Thinking Fast and Slow</i></a>.
-    
+
     <ul class="list naked-list" style="font-size: 15px">
     <li> Advisor: Francesca Rossi</li>
     </ul>
@@ -30,14 +29,13 @@
   link: https://www.dmif.uniud.it/en/phd-courses/imf/
   description: |
     Ph.D. focused on formalizing and developing tools for planning in multi-agent scenarios involving higher-order knowledge or beliefs.
-    Research thesis title: <a target="_blank" href='../assets/ffabiano_phd_thesis.pdf'><i>Planning while Believing to Know</i></a>.
 
     <ul class="list naked-list" style="font-size: 15px">
-        <li>Award: Best Ph.D. Thesis Award by GULP, 2022</li>
-        <li>Advisors: Agostino Dovier, Alessandro Dal Palù, and Enrico Pontelli</li>
-        <li>Final Mark: cum Laude</li>
+        <li> Award: Best Ph.D. Thesis Award by GULP, 2022</li>
+        <li> Research thesis title: <a target="_blank" href='../assets/ffabiano_phd_thesis.pdf'><i>Planning while Believing to Know</i></a></li>
+        <li> Advisors: Agostino Dovier, Alessandro Dal Palù, and Enrico Pontelli</li>
+        <li> Final Mark: cum Laude</li>
     </ul>
-
 
 - school: New Mexico State University
   degree: Master's Degree in Computer Science
@@ -45,9 +43,9 @@
   link: https://computerscience.nmsu.edu/
   description: |
     Master of Science program specializing in logic, declarative programming, automated planning, with a strong emphasis on producing research papers.
-    Research thesis title: <a target="_blank" href='../assets/ffabiano_master_thesis.pdf'><i>EFP and PG-EFP: Epistemic Forward Planners in Multi-Agent Domains</i></a>.
-   
+
     <ul class="list naked-list" style="font-size: 15px">
+    <li> Research thesis title: <a target="_blank" href='../assets/ffabiano_master_thesis.pdf'><i>EFP and PG-EFP: Epistemic Forward Planners in Multi-Agent Domains</i></a></li>
     <li> Advisor: Enrico Pontelli</li>
     <li>Final GPA: 3.88</li>
     </ul>
@@ -58,9 +56,9 @@
   link: https://corsi.unipr.it/en/cdl-info
   description: |
     Bachelor of Science program with an emphasis on theoretical computer science, logic, and foundational aspects of Artificial Intelligence, along with research fundamentals.
-    Research thesis title: <a target="_blank" href='../assets/ffabiano_bachelor_thesis.pdf'><i>Load Distribution Analysis in an MPI Framework</i></a>.
-    
+
     <ul class="list naked-list" style="font-size: 15px">
+    <li> Research thesis title: <a target="_blank" href='../assets/ffabiano_bachelor_thesis.pdf'><i>Load Distribution Analysis in an MPI Framework</i></a></li>
     <li> Advisor: Alessandro Dal Palù</li>
     <li> Final Mark: 109/110</li>
     </ul>

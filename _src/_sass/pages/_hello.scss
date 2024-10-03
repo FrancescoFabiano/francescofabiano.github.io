@@ -1,6 +1,7 @@
 // align items in #hello section
 section#hello {
   min-height: calc(100vh - #{$section-margin-top} - #{$section-margin-bottom});
+  max-height: calc(100vh);
 
   @media (min-width: 1200px) {
     display: flex;

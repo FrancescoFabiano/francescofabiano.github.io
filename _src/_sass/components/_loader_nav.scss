@@ -1,0 +1,34 @@
+$loader-size: 60px;
+$loader-border-width: 8px;
+
+.loader_nav {
+  position: absolute; // Confine the loader within the section
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%; // Full width of the section
+  height: 100%; // Full height of the section
+  background: rgba(37, 39, 77, 1); // Semi-transparent background for the loader
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.hidden {
+    animation: fadeOut 0.5s ease-out; // Fade-out animation
+    animation-fill-mode: forwards; // Keep the final state of the fade-out animation
+  }
+
+@keyframes fadeOut {
+  from { 
+    opacity: 1; // Start fully visible
+  }
+  to { 
+    opacity: 0; // Fade out to invisible
+    visibility: hidden; // Set to hidden after fading out
+  }
+}
+}
+
+#main-nav {
+  position: relative; // Ensure section acts as a parent for the absolute loader
+}

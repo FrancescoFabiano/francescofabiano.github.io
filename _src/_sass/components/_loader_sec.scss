@@ -1,0 +1,49 @@
+$loader-size: 60px;
+$loader-border-width: 8px;
+
+.loader_sec {
+  position: absolute; // Confine the loader within the section
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%; // Full width of the section
+  height: 100%; // Full height of the section
+  background: rgba(37, 39, 77, 0.5); // Semi-transparent background for the loader
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.hidden {
+    animation: fadeOut 0.3s ease-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  & > span {
+    border: $loader-border-width solid var($--theme-tertiary);
+    border-top: $loader-border-width solid var($--theme-primary);
+    border-radius: 50%;
+    width: $loader-size;
+    height: $loader-size;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+
+  @-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+}
+
+section {
+  position: relative; // Ensure section acts as a parent for the absolute loader
+}

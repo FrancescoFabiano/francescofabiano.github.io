@@ -22,50 +22,13 @@ class: wide
 </div>
  -->
 
- <!-- <style>
-  .fade-in-image {
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
-  }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-</style>
-
-<div class="fade-in-image">
-  <img  src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high" height="400px" width="auto" alt="Francesco's profile picture">
-</div> -->
 
 <div>
-  <img id="profile_pic" src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high" alt="Francesco's profile picture">
+  <img class="blur" id="profile_pic" src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high"
+    alt="Francesco's profile picture">
 </div>
 
-<div id="hello-text">
+<div id="hello-text" class="blur">
   <h1 class="hello-title">Hi, I'm <span class="text-primary">Francesco.</span></h1>
   <div class="hello-content" id="presentation">
     {{ site.data.intro.summary | markdownify }}

@@ -1,0 +1,16 @@
+.blur {
+    opacity: 0; // Start invisible
+    animation: blurReveal 2s forwards; // Animation for blur and reveal
+}
+
+@keyframes blurReveal {
+    0% {
+        filter: blur(10px); // Start blurred
+        opacity: 0; // Start invisible
+    }
+
+    100% {
+        filter: blur(0); // End clear
+        opacity: 1; // End visible
+    }
+}

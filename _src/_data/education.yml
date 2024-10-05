@@ -1,13 +1,13 @@
-- school: University of Oxford
-  degree: PostDoc
-  date: Jnauary 2025 - Today
-  link: https://www.ox.ac.uk/
-  description: |
-    Researcher in  UKRI AI Hub at the University of Oxford which is focused on investigating the Computational Foundations of AI, with particular focus on Understanding Understanding Decision Making.
-
-     <ul class="list naked-list" style="font-size: 15px">
-     <li> Advisor: Alessandro Abate</li>
-    </ul>
+#- school: University of Oxford
+#  degree: PostDoc
+#  date: Jnauary 2025 - Today
+#  link: https://www.ox.ac.uk/
+#  description: |
+#    Researcher in  UKRI AI Hub at the University of Oxford which is focused on investigating the Computational Foundations of AI, with particular focus on Understanding Understanding Decision Making.
+#
+#     <ul class="list naked-list" style="font-size: 15px">
+#     <li> Advisor: Alessandro Abate</li>
+#    </ul>
 
 - school: IBM Watson Research Lab
   degree: Joint Study

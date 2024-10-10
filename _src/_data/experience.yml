@@ -14,7 +14,7 @@
   title: Joint Researcher
   date: April 2020 - Today
   description: |
-    Part of an IBM Watson Research Lab Group, led by Dr. Rossi, comprised of researchers from IBM
+    Part of an <a href='https://sites.google.com/view/sofai/home' target="_blank">IBM Watson Research Lab Group</a>, led by Dr. Rossi, comprised of researchers from IBM
     and various universities.
     With this research group, we are analyzing well-known cognitive theories to define a general AI paradigm
     starting from cognitive theories such as the one popularized by D. Kahneman in his book <a target="_blank" href='https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow'><i>Thinking Fast and Slow</i></a>.
@@ -45,7 +45,7 @@
   description: |
     Structured and taught the undergraduate and graduate courses offered by the <i>Decision & System Sciences</i> curriculum at
     the <i>Erivan K. Haub School of Business</i>.
-    Moreover, I focused on research in neuro-symbolic AI, automated planning, and computational logic.
+    Moreover, I focused on research in <a href='https://sdgdashboard.sju.edu/' target="_blank">applied AI</a>, neuro-symbolic AI, automated planning and computational logic.
 
     <p style='color: var(--theme-primary);'><b>Courses</b></p>
     <ul class="list naked-list" style="font-size: 15px">

@@ -1,0 +1,36 @@
+---
+title: projects
+order: "04"
+---
+
+<div class="loader_sec"><span></span></div>
+
+<h1 class="section-header">Projects & Events</h1>
+<div id="projects" class="tabs-container">
+  <div class="tabs">
+    {% for p in site.data.projects %}
+      <a href="#proj{% increment tabLink %}" class="tab">{{ p.title }}</a>
+    {% endfor %}
+  </div>
+  <div class="tabs-content">
+    {% for p in site.data.projects %}
+      <div class="content" id="proj{% increment tab %}">
+        <div class="tab-title">
+          <div class="icons">
+            {% if p.github %}<a href="{{ p.github }}" target="_blank" class="icon" aria-label="GitHub">{% include icons/github.svg %}</a>{% endif %}
+            {% if p.pdf %}<a href="{{ p.pdf }}" target="_blank" class="icon" aria-label="project PDF report">{% include icons/pdf.svg %}</a>{% endif %}
+            {% if p.link %}<a href="{{ p.link }}" target="_blank" class="icon" aria-label="project link">{% include icons/external-link.svg %}</a>{% endif %}
+          </div>
+          <h1>{{ p.long_title }}</h1>
+        </div>
+        <ul class="tab-tags list-inline">
+          {% for tag in p.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+        <h2 class="tab-subtitle">{{ p.date }}</h2>
+        <div class="tab-content">{{ p.description | markdownify }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

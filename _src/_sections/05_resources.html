@@ -5,16 +5,16 @@ order: "04"
 
 <div class="loader_sec"><span></span></div>
 
-<h1 class="section-header">Resources & Projects</h1>
+<h1 class="section-header">Resources</h1>
 <div id="resources" class="tabs-container">
   <div class="tabs">
     {% for p in site.data.resources %}
-      <a href="#proj{% increment tabLink %}" class="tab">{{ p.title }}</a>
+      <a href="#resou{% increment tabLink %}" class="tab">{{ p.title }}</a>
     {% endfor %}
   </div>
   <div class="tabs-content">
     {% for p in site.data.resources %}
-      <div class="content" id="proj{% increment tab %}">
+      <div class="content" id="resou{% increment tab %}">
         <div class="tab-title">
           <div class="icons">
             {% if p.github %}<a href="{{ p.github }}" target="_blank" class="icon" aria-label="GitHub">{% include icons/github.svg %}</a>{% endif %}

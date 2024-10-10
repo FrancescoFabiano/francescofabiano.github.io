@@ -30,10 +30,10 @@ sections.forEach((section) => {
     const sectionHeight = section.offsetHeight;
     const halfViewportHeight = window.innerHeight*3 / 4;
 
-    if (section.id === 'education') {
+    if (section.id === 'education' || section.id === 'resources' || section.id === 'projects') {
       // Adjust the margin-top to remove extra space
       section.style.setProperty('--header-height-offset', `calc(0px + (15vh)`);
-    } else if (section.id === 'experience'  || section.id === 'resources') {
+    } else if (section.id === 'experience') {
       section.style.setProperty('--header-height-offset', `calc(0px + (7vh)`);
     } else {
       section.style.setProperty('--header-height-offset', `calc(0px + (0vh)`);

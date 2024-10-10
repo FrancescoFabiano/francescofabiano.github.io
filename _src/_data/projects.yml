@@ -1,0 +1,122 @@
+- title: SOFAI @IBM
+  long_title: Thinking Fast and Slow project webpage
+  date: ongoing
+  github: https://github.com/FrancescoFabiano/EFP
+  link: https://sites.google.com/view/sofai/home
+  description: |
+    The SOFAI project project whose aim is to advance AI by leveraging cognitive theories of how humans make decisions,
+    with particular focus on the <a target="_blank" href='https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow'>Thinking Fast and Slow</a> theory of Daniel Kahneman.
+    The project is led by IBM Research in collaboration with several academic partners. 
+
+    <br> Click the link icon in the top-right corner or <a href='https://sites.google.com/view/sofai/home' target="_blank">Here</a> to open the project website.
+
+  tags:
+    - research
+    - artificial intelligence
+    - data science
+    - un
+    - education
+
+- title: EFP
+  long_title: Epistemic Forward Planner
+  date: ongoing
+  github: https://github.com/FrancescoFabiano/EFP
+  description: |
+    This project implemets a solver, called EFP, designed following the imperative programming paradigm.
+    In particular, the solver is fully developed in C++.
+    EFP is a general and comprehensive epistemic forward solver that can solve problems defined in mA*.
+    Moreover, thanks to the introduction of agents’ attitudes and other capabilities, the planner
+    allows the users to tailor actions in whichever fashion they prefer without having
+    to worry about tedious and intricate effects definitions.
+
+    <br> Click the github icon in the top-right corner or <a href='https://github.com/FrancescoFabiano/EFP' target="_blank">Here</a> to open the project repository.
+
+  tags:
+    - research
+    - artificial intelligence
+    - multi-agent
+    - planning
+    - epistemic
+    - solver
+    - planner
+
+
+- title: SGD-II @SJU
+  long_title: SDG Dashboard website
+  date: ongoing
+#  github: https://github.com/rand-asswad/muallef
+  link: https://sdgdashboard.sju.edu/
+  description: |
+    The SDG Dashboard is a collaborative data reporting and analytics platform
+    for global business schools to share their best practice impacts on the United Nations
+    Sustainable Development Goals (SDGs) and transform business education into a force for good.
+
+    <br> Click the link icon in the top-right corner or <a href='https://sdgdashboard.sju.edu/' target="_blank">Here</a> to open the project website.
+
+  tags:
+    - research
+    - artificial intelligence
+    - hybrid
+    - neuro-symbolic
+    - ibm
+
+- title: SYNERGY 2024
+  long_title: SYNERGY Workshop <a href='https://sites.google.com/view/kr-synergy/synergy' target="_blank">@ KR 2024</a>
+  date: November 2024
+#  github: https://github.com/rand-asswad/muallef
+  link: https://sites.google.com/view/kr-synergy/synergy
+  description: |
+    SYNERGY (Symbolic and Neuro-Symbolic Architectures for Intelligent Robotics Technology) is a workshop that aims at fostering in-depth discussions on Knowledge Representation (KR)
+    and neuro-symbolic architectures with the goal of advancing intelligent robotics to new levels of sophistication.
+    SYNERGY 2024 was held at the <a href='https://kr.org/KR2024/' target="_blank">21st International Conference on Principles of Knowledge Representation and Reasoning (KR 2024)</a>.
+
+    <br> Click the link icon in the top-right corner or <a href='https://sites.google.com/view/kr-synergy/synergy' target="_blank">Here</a> to open the event's website.
+
+  tags:
+    - research
+    - event 
+    - workshop
+    - neuro-symbolic AI
+    - robotics
+
+- title: ICLP/LPNMR-DC 2024
+  long_title: Doctoral Consortium and School on Logic Programming <a href='https://www.iclp24.utdallas.edu/' target="_blank">@ ICLP/LPNMR 2024</a>
+  date: October 2024
+#  github: https://github.com/rand-asswad/muallef
+  link: https://sites.google.com/view/iclplpnmrdc2024/iclplpnmr-dc-2024
+  description: |
+    The ICLP & LPNMR Doctoral Consortium (ICLP/LPNMR-DC 2024) and the Autumn School on Logic Programming have taken place during the
+    <a href='https://www.iclp24.utdallas.edu/' target="_blank">40th International Conference on Logic Programming (ICLP 2024)</a> and the 17th International
+    <a href='https://lpnmr2024.demacs.unical.it/' target="_blank">Conference on Logic Programming and Non-monotonic Reasoning (LPNMR 2024)</a> in Dallas, Texas, US, on October 12-13, 2024.
+
+    <br> Click the link icon in the top-right corner or <a href='https://sites.google.com/view/iclplpnmrdc2024/iclplpnmr-dc-2024' target="_blank">Here</a> to open the event's website.
+
+  tags:
+    - research
+    - event 
+    - logic programming
+    - doctoral consortium
+    - school
+
+
+- title: ICLP-DC 2023
+  long_title: Doctoral Consortium <a href='https://iclp2023.imperial.ac.uk/home' target="_blank">@ ICLP 2023</a>
+  date: July 2023
+#  github: https://github.com/rand-asswad/muallef
+  link: https://iclp2023.imperial.ac.uk/affiliated-events/doctorial-consortium
+  description: |
+    The 19th Doctoral Consortium (DC) on Logic Programming was part of the <a href='https://iclp2023.imperial.ac.uk/home' target="_blank">39th International Conference on Logic Programming (ICLP 2023)</a>.
+    The DC provided students and early career researchers with the opportunity
+    to present and discuss their research directions, obtain feedback from both peers and experts in the field, and participate
+    in mentoring sessions on how to prepare for a research career.
+    In particular, the DC hosted leaders in logic programming research, from academia and industry, that
+    gave talks on their research areas and comment on the presented works, providing valuable insights for early career researchers.
+
+    <br> Click the link icon in the top-right corner or <a href='https://iclp2023.imperial.ac.uk/affiliated-events/doctorial-consortium' target="_blank">Here</a> to open the event's website.
+
+  tags:
+    - research
+    - event 
+    - logic programming
+    - doctoral consortium
+    - school

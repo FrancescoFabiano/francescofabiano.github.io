@@ -1,7 +1,7 @@
 - title: SOFAI @IBM
   long_title: Thinking Fast and Slow project webpage
   date: ongoing
-  github: https://github.com/FrancescoFabiano/EFP
+#  github: https://github.com/FrancescoFabiano/EFP
   link: https://sites.google.com/view/sofai/home
   description: |
     The SOFAI project project whose aim is to advance AI by leveraging cognitive theories of how humans make decisions,
@@ -61,14 +61,14 @@
     - ibm
 
 - title: SYNERGY 2024
-  long_title: SYNERGY Workshop <a href='https://sites.google.com/view/kr-synergy/synergy' target="_blank">@ KR 2024</a>
+  long_title: SYNERGY Workshop <a href='https://kr.org/KR2024/' target="_blank">@ KR 2024</a>
   date: November 2024
 #  github: https://github.com/rand-asswad/muallef
   link: https://sites.google.com/view/kr-synergy/synergy
   description: |
     SYNERGY (Symbolic and Neuro-Symbolic Architectures for Intelligent Robotics Technology) is a workshop that aims at fostering in-depth discussions on Knowledge Representation (KR)
     and neuro-symbolic architectures with the goal of advancing intelligent robotics to new levels of sophistication.
-    SYNERGY 2024 was held at the <a href='https://kr.org/KR2024/' target="_blank">21st International Conference on Principles of Knowledge Representation and Reasoning (KR 2024)</a>.
+    SYNERGY 2024 was held at the <a href='https://kr.org/KR2024/' target="_blank">21st International Conference on Principles of Knowledge Representation and Reasoning</a> (KR 2024).
 
     <br> Click the link icon in the top-right corner or <a href='https://sites.google.com/view/kr-synergy/synergy' target="_blank">Here</a> to open the event's website.
 
@@ -80,14 +80,14 @@
     - robotics
 
 - title: ICLP/LPNMR-DC 2024
-  long_title: Doctoral Consortium and School on Logic Programming <a href='https://www.iclp24.utdallas.edu/' target="_blank">@ ICLP/LPNMR 2024</a>
+  long_title: Doctoral Consortium and School on Logic Programming <a href='https://www.iclp24.utdallas.edu/' target="_blank">@ ICLP</a>/<a href='https://lpnmr2024.demacs.unical.it/' target="_blank">LPNMR 2024</a>
   date: October 2024
 #  github: https://github.com/rand-asswad/muallef
   link: https://sites.google.com/view/iclplpnmrdc2024/iclplpnmr-dc-2024
   description: |
     The ICLP & LPNMR Doctoral Consortium (ICLP/LPNMR-DC 2024) and the Autumn School on Logic Programming have taken place during the
-    <a href='https://www.iclp24.utdallas.edu/' target="_blank">40th International Conference on Logic Programming (ICLP 2024)</a> and the 17th International
-    <a href='https://lpnmr2024.demacs.unical.it/' target="_blank">Conference on Logic Programming and Non-monotonic Reasoning (LPNMR 2024)</a> in Dallas, Texas, US, on October 12-13, 2024.
+    <a href='https://www.iclp24.utdallas.edu/' target="_blank">40th International Conference on Logic Programming</a> (ICLP 2024) and the 17th International
+    <a href='https://lpnmr2024.demacs.unical.it/' target="_blank">Conference on Logic Programming and Non-monotonic Reasoning</a> (LPNMR 2024) in Dallas, Texas, US, on October 12-13, 2024.
 
     <br> Click the link icon in the top-right corner or <a href='https://sites.google.com/view/iclplpnmrdc2024/iclplpnmr-dc-2024' target="_blank">Here</a> to open the event's website.
 
@@ -105,7 +105,7 @@
 #  github: https://github.com/rand-asswad/muallef
   link: https://iclp2023.imperial.ac.uk/affiliated-events/doctorial-consortium
   description: |
-    The 19th Doctoral Consortium (DC) on Logic Programming was part of the <a href='https://iclp2023.imperial.ac.uk/home' target="_blank">39th International Conference on Logic Programming (ICLP 2023)</a>.
+    The 19th Doctoral Consortium (DC) on Logic Programming was part of the <a href='https://iclp2023.imperial.ac.uk/home' target="_blank">39th International Conference on Logic Programming</a> (ICLP 2023).
     The DC provided students and early career researchers with the opportunity
     to present and discuss their research directions, obtain feedback from both peers and experts in the field, and participate
     in mentoring sessions on how to prepare for a research career.

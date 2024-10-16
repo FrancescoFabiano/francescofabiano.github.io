@@ -1,6 +1,5 @@
 <ul class="link-icons horizontal">
   <li>
-  <li>
     <a href="mailto:{{ site.data.contact.email }}" class="icon" aria-label="e-mail">
       {% include icons/mail.svg %}
     </a>
@@ -19,6 +18,11 @@
   <li>
     <a href="https://arxiv.org/a/{{ site.data.contact.arxiv }}" target="_blank" class="icon" aria-label="arxiv">
       {% include icons/arxiv.svg %}
+    </a>
+  </li>
+  <li>
+    <a href="https://{{ site.data.contact.academiaAffiliation }}.academia.edu/{{ site.data.contact.academiaName }}" target="_blank" class="icon" aria-label="academia">
+      {% include icons/academia.svg %}
     </a>
   </li>
   <li>

@@ -34,15 +34,28 @@ $--theme-on-secondary: --theme-on-secondary;
 $--theme-on-tertiary: --theme-on-tertiary;
 $--theme-on-surface: --theme-on-surface;
 
+
+/* $theme-map-light: (
+    $--theme-background:   #fafafa, 
+    $--theme-primary:      #2E9CCA,
+    $--theme-secondary:    #212121,
+    $--theme-tertiary:     #29648A,
+    $--theme-surface:      #cce2f0,
+    $--theme-on-primary:   #fafafa,
+    $--theme-on-secondary: #212121,
+    $--theme-on-tertiary:  #29648A,
+    $--theme-on-surface:   #2E9CCA,
+); */
+
 // Default dark theme
 $theme-map-dark: (
-    $--theme-background:   #25274D,  //darker
-    $--theme-primary:      #2E9CCA,  //bright
-    $--theme-secondary:    #AAABB8,  //grey
-    $--theme-tertiary:     #29648A,  //light
-    $--theme-surface:      #464866,  //dark
-    $--theme-on-primary:   #25274D,  //darker
-    $--theme-on-secondary: #29648A,  //light
-    $--theme-on-tertiary:  #AAABB8,  //grey
-    $--theme-on-surface:   #2E9CCA,  //bright
+    $--theme-background:   #25274D,
+    $--theme-primary:      #2E9CCA,
+    $--theme-secondary:    #AAABB8,
+    $--theme-tertiary:     #29648A,
+    $--theme-surface:      #464866,
+    $--theme-on-primary:   #25274D,
+    $--theme-on-secondary: #29648A,
+    $--theme-on-tertiary:  #AAABB8,
+    $--theme-on-surface:   #2E9CCA,
 );

@@ -29,27 +29,30 @@ $--theme-secondary: --theme-secondary;
 $--theme-tertiary: --theme-tertiary;
 $--theme-surface: --theme-surface;
 $--theme-background: --theme-background;
+$--theme-semitransparent-background: --theme-semitransparent-background;
 $--theme-on-primary: --theme-on-primary;
 $--theme-on-secondary: --theme-on-secondary;
 $--theme-on-tertiary: --theme-on-tertiary;
 $--theme-on-surface: --theme-on-surface;
 
 
-/* $theme-map-light: (
-    $--theme-background:   #fafafa, 
+$theme-map-light: (
+    $--theme-background:   #f1f1f7,
     $--theme-primary:      #2E9CCA,
+    $--theme-semitransparent-background: rgba(#2E9CCA, 0.3),
     $--theme-secondary:    #212121,
     $--theme-tertiary:     #29648A,
     $--theme-surface:      #cce2f0,
-    $--theme-on-primary:   #fafafa,
+    $--theme-on-primary:   #f1f1f7,
     $--theme-on-secondary: #212121,
     $--theme-on-tertiary:  #29648A,
     $--theme-on-surface:   #2E9CCA,
-); */
+);
 
 // Default dark theme
 $theme-map-dark: (
     $--theme-background:   #25274D,
+    $--theme-semitransparent-background: rgba(#25274D, 0.5),
     $--theme-primary:      #2E9CCA,
     $--theme-secondary:    #AAABB8,
     $--theme-tertiary:     #29648A,
@@ -59,3 +62,35 @@ $theme-map-dark: (
     $--theme-on-tertiary:  #AAABB8,
     $--theme-on-surface:   #2E9CCA,
 );
+
+
+//If Javascript is disabled
+/* Default light theme */
+:root {
+    --theme-background:   #f1f1f7;
+    --theme-primary:      #2E9CCA;
+    $--theme-semitransparent-background: rgba(#2E9CCA, 0.3);
+    --theme-secondary:    #212121;
+    --theme-tertiary:     #29648A;
+    --theme-surface:      #cce2f0;
+    --theme-on-primary:   #f1f1f7;
+    --theme-on-secondary: #212121;
+    --theme-on-tertiary:  #29648A;
+    --theme-on-surface:   #2E9CCA;
+}
+
+/* Dark theme based on system preference */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme-background:   #25274D;
+        $--theme-semitransparent-background: rgba(#25274D, 0.5);
+        --theme-primary:      #2E9CCA;
+        --theme-secondary:    #AAABB8;
+        --theme-tertiary:     #29648A;
+        --theme-surface:      #464866;
+        --theme-on-primary:   #25274D;
+        --theme-on-secondary: #29648A;
+        --theme-on-tertiary:  #AAABB8;
+        --theme-on-surface:   #2E9CCA;
+    }
+}

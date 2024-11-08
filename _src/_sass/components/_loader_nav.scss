@@ -8,7 +8,7 @@ $loader-border-width: 8px;
   left: 0;
   width: 100%; // Full width of the section
   height: 100%; // Full height of the section
-  background: rgba(37, 39, 77, 1); // Semi-transparent background for the loader
+  background: var($--theme-background); // Semi-transparent background for the loader
   display: flex;
   justify-content: center;
   align-items: center;

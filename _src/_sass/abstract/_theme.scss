@@ -2,11 +2,29 @@
 /* Theming as inspired by this article
  * https://bcodes.io/blog/post/theming-css-variables-in-scss
  */
+.light-theme {
+  @include spread-map($theme-map-light);
+}
 
-:root.dark {
-    @include spread-map($theme-map-dark);
+.dark-theme {
+  @include spread-map($theme-map-dark);
+}
+
+:root {
+  @include spread-map($theme-map-light);
+}
+
+[data-theme="dark"] {
+  @include spread-map($theme-map-dark);
+}
+
+*{
+  transition: 
+      background-color 0.3s ease,
+      color 0.3s ease,
 }
 
 body {
+  //transition: background-color 3s ease, color 3s ease;
   background-color: var($--theme-background);
 }

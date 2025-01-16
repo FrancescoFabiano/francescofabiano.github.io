@@ -1,11 +1,11 @@
-#- company: Oxford
-#  company_w_location: University of Oxford
-#  link: https://www.ox.ac.uk/
-#  title: Research Associate
-#  date: January 2025 - Today
-#  description: |
-#   Research Associate on UKRI AI Hub Project at the University of Oxford which is focused on
-#   investigating the Computational Foundations of AI, with particular focus on Understanding Understanding Decision Making.
+- company: Oxford
+  company_w_location: University of Oxford
+  link: https://www.ox.ac.uk/
+  title: Research Associate
+  date: January 2025 - Today
+  description: |
+   Research Associate on UKRI AI Hub Project at the University of Oxford which is focused on
+   investigating the Computational Foundations of AI, with particular focus on Understanding Understanding Decision Making.
 
 
 - company: IBM

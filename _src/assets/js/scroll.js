@@ -33,9 +33,10 @@ sections.forEach((section) => {
     if (section.id === 'education' || section.id === 'resources' || section.id === 'projects') {
       // Adjust the margin-top to remove extra space
       section.style.setProperty('--header-height-offset', `calc(0px + (15vh)`);
-    } else if (section.id === 'experience') {
-      section.style.setProperty('--header-height-offset', `calc(0px + (7vh)`);
-    } else {
+    } //else if (section.id === 'experience') {
+      //section.style.setProperty('--header-height-offset', `calc(0px + (7vh)`);
+    //} 
+    else {
       section.style.setProperty('--header-height-offset', `calc(0px + (0vh)`);
     }
   });

@@ -13,9 +13,9 @@
   tags:
     - research
     - artificial intelligence
-    - data science
-    - un
-    - education
+    - hybrid
+    - neuro-symbolic
+    - ibm
 
 - title: EFP
   long_title: Epistemic Forward Planner
@@ -56,9 +56,10 @@
   tags:
     - research
     - artificial intelligence
-    - hybrid
-    - neuro-symbolic
-    - ibm
+    - data science
+    - un
+    - education
+
 
 - title: SYNERGY 2024
   long_title: SYNERGY Workshop <a href='https://kr.org/KR2024/' target="_blank">@ KR 2024</a>
@@ -119,4 +120,3 @@
     - event 
     - logic programming
     - doctoral consortium
-    - school

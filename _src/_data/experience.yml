@@ -1,11 +1,11 @@
 - company: Oxford
   company_w_location: University of Oxford
-  link: https://www.ox.ac.uk/
+  link: https://www.cs.ox.ac.uk/
   title: Research Associate
   date: January 2025 - Today
   description: |
-   Research Associate on UKRI AI Hub Project at the University of Oxford which is focused on
-   investigating the Computational Foundations of AI, with particular focus on Understanding Understanding Decision Making.
+     Research Associate on the EPSRC-funded <a target="_blank" href="https://erlangenhub.ox.ac.uk/">Erlangen AI Hub</a> at the <a target="_blank" href="https://www.ox.ac.uk/">University of Oxford</a>, based in the <a target="_blank" href="https://www.cs.ox.ac.uk/">Department of Computer Science</a>.
+     My research focuses on the computational foundations of AI, with a particular emphasis on understanding decision making.
 
 
 - company: IBM

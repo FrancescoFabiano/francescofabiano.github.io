@@ -17,19 +17,19 @@
     - neuro-symbolic
     - ibm
 
-- title: EFP
-  long_title: Epistemic Forward Planner
+- title: deep
+  long_title: Dynamic Epistemic logic-basEd Planner
   date: ongoing
-  github: https://github.com/FrancescoFabiano/EFP
+  github: https://github.com/FrancescoFabiano/deep
   description: |
-    This project implemets a solver, called EFP, designed following the imperative programming paradigm.
+    This project implemets a solver, called deep, designed following the imperative programming paradigm.
     In particular, the solver is fully developed in C++.
-    EFP is a general and comprehensive epistemic forward solver that can solve problems defined in mA*.
+    deep is a general and comprehensive epistemic forward solver that can solve problems defined in mA*.
     Moreover, thanks to the introduction of agents’ attitudes and other capabilities, the planner
     allows the users to tailor actions in whichever fashion they prefer without having
     to worry about tedious and intricate effects definitions.
 
-    <br> Click the github icon in the top-right corner or <a href='https://github.com/FrancescoFabiano/EFP' target="_blank">Here</a> to open the project repository.
+    <br> Click the github icon in the top-right corner or <a href='https://github.com/FrancescoFabiano/deep' target="_blank">Here</a> to open the project repository.
 
   tags:
     - research

@@ -7,12 +7,26 @@
     Research Associate on the EPSRC-funded <a target="_blank" href="https://erlangenhub.ox.ac.uk/">Erlangen AI Hub</a> at the <a target="_blank" href="https://www.ox.ac.uk/">University of Oxford</a>, based in the <a target="_blank" href="https://www.cs.ox.ac.uk/">Department of Computer Science</a>.
     My research focuses on the computational foundations of AI, with a particular emphasis on understanding decision-making.
 
-    I am also affiliated with <a target="_blank" href="https://www.kellogg.ox.ac.uk/">Kellogg College</a> as a Junior Research Fellow.
+    I am also affiliated with <a target="_blank" href="https://www.kellogg.ox.ac.uk/">Kellogg College</a> as Junior Research Fellow.
 
-    <strong>Profiles</strong>  
+    <strong>External Profiles</strong>  
     <ul>
       <li><a target="_blank" href="https://www.cs.ox.ac.uk/people/francesco.fabiano/">Oxford, Computer Science Department</a></li>
       <li><a target="_blank" href="https://www.kellogg.ox.ac.uk/our-people/francesco-fabiano/">Kellogg College</a></li>
+      <li><a target="_blank" href="https://www.trinity.ox.ac.uk/people/francesco-fabiano">Trinity College</a></li>
+    </ul>
+
+- company: Oxford
+  company_w_location: Trinity College, Oxford
+  link: https://www.trinity.ox.ac.uk/
+  title: Lecturer in Computer Science
+  date: October 2025 - November 2026
+  description: |
+    Lecturer at Trinity College, providing tutorial support to Computer Science students for the course <i>Imperative Programming</i>.
+
+    <strong>External Profiles</strong>  
+    <ul>
+      <li><a target="_blank" href="https://www.cs.ox.ac.uk/people/francesco.fabiano/">Oxford, Computer Science Department</a></li>
     </ul>
 
 - company: IBM

@@ -16,11 +16,11 @@
       <li><a target="_blank" href="https://www.trinity.ox.ac.uk/people/francesco-fabiano">Trinity College</a></li>
     </ul>
 
-- company: Oxford
+- company: Trinity
   company_w_location: Trinity College, Oxford
   link: https://www.trinity.ox.ac.uk/
   title: Lecturer in Computer Science
-  date: October 2025 - November 2026
+  date: October 2025 - Today
   description: |
     Lecturer at Trinity College, providing tutorial support to Computer Science students for the course <i>Imperative Programming</i>.
 
@@ -29,11 +29,19 @@
       <li><a target="_blank" href="https://www.trinity.ox.ac.uk/people/francesco-fabiano">Trinity College</a></li>
     </ul>
 
+- company: GP
+  company_w_location: Growth Protocol
+  link: https://www.growthprotocol.ai/
+  title: Consultant on Neuro-Symbolic AI
+  date: June 2026 - October 2026
+  description: |
+    Defined and implemented novel strategies to better integrate neural and symbolic components in the Growth Protocol reasoning engine.
+
 - company: IBM
   company_w_location: IBM Research
   link: https://research.ibm.com/labs/yorktown-heights
   title: Joint Researcher
-  date: April 2020 - Today
+  date: April 2020 - September 2026
   description: |
     Part of an <a href='https://sites.google.com/view/sofai/home' target="_blank">IBM Watson Research Lab Group</a>, led by Dr. Rossi, comprised of researchers from IBM
     and various universities.
@@ -44,7 +52,7 @@
   company_w_location: New Mexico State University
   link: https://www.nmsu.edu/
   title: Affiliated Faculty Member
-  date: August 2024 - Today
+  date: August 2024 - September 2026
   description: |
     Affiliated Faculty at the Computer Science Department of New Mexico State University to conduct research on Multi-Agent Epistemic Planning in collaboration with Professors Enrico Pontelli and Tran Cao Son
 

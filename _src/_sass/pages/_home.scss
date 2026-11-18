@@ -1,8 +1,6 @@
 // align items in #home section
 section#home {
-  // The visible window under the header: the content is centred in what you see.
-  min-height: calc(100vh - #{$section-margin-top});
-  max-height: calc(100vh);
+  // As tall as its content (on phones: the whole screen, the bar at the bottom; see below).
 
   // Grid (assets/js/morph.js adds the arrows and the button bar): the picture with an arrow
   // either side, then the text, and the bar at the bottom of the screen (it stays put whatever
@@ -20,8 +18,9 @@ section#home {
   & > #home-text { grid-column: 1 / -1; grid-row: 2; align-self: start; }
   & > .morph-controls { grid-column: 2; grid-row: 4; align-self: end; margin-block: 2rem 1.75rem; }
 
-  // Phones: the section starts 50px down (layout/_section.scss), so it reaches the bottom of the
-  // visible screen (svh: the screen with the browser's bars showing); short phones, tighter bar.
+  // Phones: the section fills the visible screen, so the bar sits at its bottom whatever the
+  // length of each card's text. It starts 50px down (layout/_section.scss); svh is the screen
+  // with the browser's bars showing. Short phones: a tighter bar.
   @media (max-width: $sm) {
     min-height: calc(100vh - 50px);
     min-height: calc(100svh - 50px);

@@ -26,9 +26,19 @@
     </a>
   </li>
   <li>
-    <a href="mailto:{{ site.data.contact.email }}" class="icon" aria-label="e-mail">
+    {%- comment -%} The address is not written in the page: its two halves are stored reversed and
+    put together by the browser, so simple address harvesters do not find it. {%- endcomment -%}
+    {%- assign mail = site.data.contact.email | split: "@" -%}
+    <a href="#" class="icon" aria-label="e-mail" title="E-mail" id="mail-link"
+      data-u="{{ mail[0] | split: '' | reverse | join: '' }}" data-d="{{ mail[1] | split: '' | reverse | join: '' }}">
       {% include icons/mail.svg %}
     </a>
+    <script>
+      (function () {
+        var a = document.getElementById("mail-link"), r = function (s) { return s.split("").reverse().join(""); };
+        if (a) a.href = "mailto:" + r(a.dataset.u) + "\u0040" + r(a.dataset.d);
+      })();
+    </script>
   </li>
   <li>
     <a href="https://dblp.org/pid/{{ site.data.contact.dblp }}" target="_blank" class="icon" aria-label="dblp">

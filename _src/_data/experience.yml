@@ -1,3 +1,11 @@
+- company: FHSR
+  company_w_location: FHSR Ltd
+  link: https://www.fhsrglobal.com/
+  title: Inter-Agentic Communication Lead
+  date: October 2026 - Today
+  description: |
+    Leading the research on how AI agents communicate and reason, with focus on the AI Cognition Engine that powers FHSR's synthetic-population platforms.
+
 - company: Oxford
   company_w_location: University of Oxford
   link: https://www.cs.ox.ac.uk/
@@ -33,7 +41,7 @@
   company_w_location: Growth Protocol
   link: https://www.growthprotocol.ai/
   title: Consultant on Neuro-Symbolic AI
-  date: June 2026 - October 2026
+  date: June 2026 - September 2026
   description: |
     Defined and implemented novel strategies to better integrate neural and symbolic components in the Growth Protocol reasoning engine.
 
@@ -112,7 +120,7 @@
 - company: ACMI
   company_w_location: ACMI S.P.A. & University of Parma
   link: https://www.acmispa.it/
-  title: Research Fellowship
+  title: Research Associate
   date: January 2021 - December 2022
   description: |
     <b style='color: var(--theme-primary);'>Research Title:</b> <i>Artificial Intelligence for packaging production line</i>.

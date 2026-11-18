@@ -3,7 +3,12 @@ title: publications
 order: "06"
 ---
 
-<div class="loader_sec"><span></span></div>
-
 <h1 class="section-header">Publications</h1>
-<script src="https://bibbase.org/show?bib=https://dblp.org/pid/221/6112.bib&noBootstrap=1&jsonp=1&theme=mila&showSearch=true"></script>
+<p class="small">Also on <a href="https://dblp.org/pid/221/6112.html" target="_blank" rel="noopener">DBLP</a> and <a href="https://scholar.google.com/citations?user=W6JOvEIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
+<input id="pub-search" class="pub-search" type="search" placeholder="Search publications" aria-label="Search publications">
+<p id="pub-status" class="small pub-status"></p>
+<div id="pub-live" hidden></div>
+<div id="pub-fallback">
+{% include publications_list.html %}
+</div>
+<script defer src="/assets/js/publications.js"></script>

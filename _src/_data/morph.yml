@@ -1,0 +1,85 @@
+# Home page: every so often the portrait morphs into one of these drawings, and the
+# text on the left changes to tell its story (assets/js/morph.js). From a drawing the
+# morph goes on to another one or back to the portrait, at random. With "Stop animation"
+# the cards show as a carousel in the order of this file.
+#
+# Each item: image (path) or quote (+ translation, author), then
+#   title  - the big line on the left; wrap the highlighted words in <span>...</span>
+#   text   - the paragraph under it (HTML allowed)
+#   credit / credit_link - optional, for licensed artwork (artist and licence; link to the licence)
+
+- image: /assets/pic/morph/parma.png
+  title: I'm from <span>Parma.</span>
+  text: I grew up in Parma, Italy. Of course I love <span>good food</span>, especially when I can enjoy it with my <span>lifelong friends</span>.
+  credit: "Arms: Josedar and Heralder, CC BY-SA 4.0"
+  credit_link: https://creativecommons.org/licenses/by-sa/4.0/
+
+- image: /assets/pic/morph/calestano_arms.png
+  title: My favourite <span>place.</span>
+  text: <span>Calestano</span> is a small village in the hills south of Parma. It is my favourite place on Earth.
+  credit: "Arms: Baseluna014, CC BY-SA 4.0"
+  credit_link: https://creativecommons.org/licenses/by-sa/4.0/
+
+- image: /assets/pic/morph/tartufo_trail.svg
+  title: I love <span>running.</span>
+  text: I am somewhat of a runner, and <span>trail running</span> in the hills of Calestano is my favourite. This is the 17 km course of the <span>Tartufo Trail</span>, with about 1,000 m of climbing.
+
+- image: /assets/pic/morph/rome_marathon.svg
+  title: My first <span>marathon.</span>
+  text: I ran the <span>Rome Marathon</span> on 22 March 2026. To be honest, I am probably prouder of it than of my PhD.
+
+- image: /assets/pic/morph/oxford.png
+  title: University of <span>Oxford.</span>
+  text: I am a Research Associate on the EPSRC-funded <a target="_blank" href="https://erlangenhub.ox.ac.uk/">Erlangen AI Hub</a> at the <a target="_blank" href="https://www.ox.ac.uk/">University of Oxford</a>. I work with the <a target="_blank" href="https://oxcav.site.ox.ac.uk/">OXCAV</a> group on several aspects of AI, with a particular focus on <span>decision making</span>.
+  credit: "Seal: Jonas Magnus Lystad, Wikimedia Commons, CC BY-SA 4.0"
+  credit_link: https://commons.wikimedia.org/wiki/File:Circlet_of_University_of_Oxford.svg
+
+- image: /assets/pic/morph/trinity.png
+  title: Trinity <span>College.</span>
+  text: I am a <span>Lecturer in Computer Science</span> at Trinity. The college and its neighbour Balliol have a rivalry that goes back centuries, and Balliol students still sing chants at Trinity called <span>Gordoulis</span>.
+
+- image: /assets/pic/morph/kellogg.png
+  title: Kellogg <span>College.</span>
+  text: I am a <span>Junior Research Fellow</span> at Kellogg. And yes, that Kellogg. The college was founded in 1990 as Rewley House, and renamed in 1994 after <span>W. K. Kellogg</span>, the cereal pioneer, whose foundation supported continuing education at Oxford.
+  credit: "Arms: ChevronTango, CC BY-SA 3.0"
+  credit_link: https://creativecommons.org/licenses/by-sa/3.0/
+
+- image: /assets/pic/morph/kripke.svg
+  title: Everything’s a <span>graph.</span>
+  text: Everyone in Computer Science has a favourite knowledge representation, and <span>Kripke structures</span> are mine. Worlds are the situations an agent thinks possible, and edges say which ones it cannot tell apart.
+
+- image: /assets/pic/morph/kdp.svg
+  title: Kripke Decision <span>Processes.</span>
+  text: One of my big academic objectives is to unify <span>multi-agent reasoning</span> under a shared representation. <span>Kripke Decision Processes</span> are a step towards it. They let agents plan on what will happen and on what the others know.
+
+- image: /assets/pic/morph/neurosymbolic.svg
+  title: <span>Neuro-symbolic</span> AI.
+  text: I combine <span>logic</span> and <span>learning</span>. For example, epistemic formulae formalize what agents believe, while graph neural networks compress the structures behind them to speed up the agents' reasoning.
+
+- image: /assets/pic/morph/robust_mdp.svg
+  title: Best-effort <span>reasoning.</span>
+  text: Cassical literature on <span>stochastic reasoning</span> assumes decision-making processes against an 'all-knowing' entity, the environment. In <span>best-effort reasoning</span> we give the environment the right amount of power to derive more realistic strategies.
+
+- image: /assets/pic/morph/fhsr_world.svg
+  title: <span>Anthropology</span>-inspired <span>AI.</span>
+  text: At <a target="_blank" href="https://www.fhsrglobal.com/">FHSR</a> we build a <span>societal world model</span> with AI, grounded in anthropology. As <span>Inter-Agentic Communication Lead</span>, I head the research on how AI agents communicate and reason.
+
+- image: /assets/pic/morph/kojiki_torii.svg
+  title: Read the <span>Kojiki.</span>
+  text: I am fascinated by <span>mythology</span> and by how myths shape cultures around the world. If you read one book of myths, make it the <a target="_blank" href="https://www.jstor.org/stable/j.ctt183pkqk">Kojiki</a>, the oldest chronicle of Japan.
+
+- quote: "Cred’io ch’ei credette ch’io credesse"
+  translation: I believe he believed that I believed
+  author: Dante Alighieri, Inferno XIII
+  title: A 700-year-old <span>problem.</span>
+  text: Dante wrote <span>nested beliefs</span> seven centuries ago, and reasoning with them is still an open problem. It was the topic of my <a target="_blank" href="/assets/ffabiano_phd_thesis.pdf">PhD thesis</a>, and I am still working on it.
+
+- quote: No one knows everything, but true wisdom is to know whom to ask.
+  author: Students’ proverb, in Moss, Dynamic Epistemic Logic
+  title: On <span>sharing.</span>
+  text: Knowledge exchange and collaborating with other is the <span>core of Academia</span>. <span>Knowing who knows what</span>, and asking the right person is often the fastest way to solve a problem (or learn about new ones).
+
+- quote: An investment in knowledge pays the best interest.
+  author: Benjamin Franklin
+  title: My favourite <span>quote.</span>
+  text: It is short, simple and true. Every hour I spend <span>learning</span> keeps paying back, often in ways I could not predict.

@@ -45,14 +45,4 @@ section:target::before {
   }
 } */
 
-// offset section anchor links
-section:target::before {
-  content: '';
-  display: block;
-  height: calc(#{$header-height} + var(--header-height-offset));
-  margin-top: calc(0px - (#{$header-height} + var(--header-height-offset)));
-  @media (max-width: $sm) {
-    height: $header-height;
-    margin-top: -$header-height;
-  }
-}
+// section placement for in-page links is done by assets/js/center.js

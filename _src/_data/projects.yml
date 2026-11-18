@@ -4,7 +4,7 @@
 #  github: https://github.com/FrancescoFabiano/EFP
   link: https://sites.google.com/view/sofai/home
   description: |
-    The SOFAI project project whose aim is to advance AI by leveraging cognitive theories of how humans make decisions,
+    The SOFAI project, whose aim is to advance AI by leveraging cognitive theories of how humans make decisions,
     with particular focus on the <a target="_blank" href='https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow'>Thinking Fast and Slow</a> theory of Daniel Kahneman.
     The project is led by IBM Research in collaboration with several academic partners. 
 
@@ -22,7 +22,7 @@
   date: ongoing
   github: https://github.com/FrancescoFabiano/deep
   description: |
-    This project implemets a solver, called deep, designed following the imperative programming paradigm.
+    This project implements a solver, called deep, designed following the imperative programming paradigm.
     In particular, the solver is fully developed in C++.
     deep is a general and comprehensive epistemic forward solver that can solve problems defined in mA*.
     Moreover, thanks to the introduction of agents’ attitudes and other capabilities, the planner
@@ -41,7 +41,7 @@
     - planner
 
 
-- title: SGD-II @SJU
+- title: SDG-II @SJU
   long_title: SDG Dashboard website
   date: ongoing
 #  github: https://github.com/rand-asswad/muallef
@@ -60,6 +60,24 @@
     - un
     - education
 
+
+- title: PR-BGI 2026
+  long_title: PR-BGI Workshop <a href='https://icaps26.icaps-conference.org/' target="_blank">@ ICAPS 2026</a>
+  date: June 2026
+  link: https://icaps26.icaps-conference.org/program/workshops/pr_bgi/
+  description: |
+    PR-BGI (Planning and Reasoning about Beliefs, Goals and Intentions) is a workshop on enabling autonomous agents to operate in shared environments alongside other agents and humans,
+    by reasoning about their beliefs, goals and intentions.
+    PR-BGI 2026 was held in Dublin, Ireland, on June 28, 2026, at the <a href='https://icaps26.icaps-conference.org/' target="_blank">36th International Conference on Automated Planning and Scheduling</a> (ICAPS 2026).
+
+    <br> Click the link icon in the top-right corner or <a href='https://icaps26.icaps-conference.org/program/workshops/pr_bgi/' target="_blank">Here</a> to open the event's website.
+
+  tags:
+    - research
+    - event
+    - workshop
+    - epistemic planning
+    - multi-agent
 
 - title: SYNERGY 2024
   long_title: SYNERGY Workshop <a href='https://kr.org/KR2024/' target="_blank">@ KR 2024</a>
@@ -120,3 +138,21 @@
     - event 
     - logic programming
     - doctoral consortium
+
+- title: Ph.D. Thesis
+  long_title: My Ph.D. thesis titled <i>Planning while Believing to Know</i>
+  date: October 2021
+  pdf: ../assets/ffabiano_phd_thesis.pdf
+  description: |
+    My Ph.D. thesis, <i>Planning while Believing to Know</i>, written at the University of Udine under the supervision of Agostino Dovier, Alessandro Dal Palù and Enrico Pontelli.
+    It formalizes and develops tools for planning in multi-agent scenarios involving higher-order knowledge or beliefs, and received the Best Ph.D. Thesis Award by GULP in 2022.
+
+    <br> Click the pdf icon in the top-right corner or <a href='../assets/ffabiano_phd_thesis.pdf' target="_blank">Here</a> to view it.
+
+  tags:
+    - research
+    - multi-agent
+    - planning
+    - epistemic
+    - phd
+    - thesis

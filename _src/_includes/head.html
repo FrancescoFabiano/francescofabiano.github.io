@@ -6,9 +6,10 @@
   {% else %}{{ site.title | escape }}{% endif %}
 </title>
 
-<!-- Preconnect to Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Web fonts are served from this site (see _sass/abstract/_fonts.scss); the two used
+     for most text are preloaded so they arrive with the page and the text does not reflow -->
+<link rel="preload" href="/assets/fonts/lato-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/roboto-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- Meta Tags, Open Graph & Structured Data -->
 {% include meta.html %}

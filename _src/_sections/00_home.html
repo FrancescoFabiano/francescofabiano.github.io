@@ -1,5 +1,6 @@
 ---
 title: home
+nav: about me  # label in the menu; the section id stays "home"
 order: "00"
 class: wide
 ---
@@ -26,6 +27,8 @@ class: wide
 <div>
   <img class="blur" id="profile_pic" src="../assets/pic/picture/pic_refined_colored.png" fetchpriority="high"
     alt="Francesco's profile picture">
+  <script id="morph-data" type="application/json">{{ site.data.morph | jsonify }}</script>
+  <script defer src="/assets/js/morph.js?v={{ site.time | date: '%s' }}"></script>
 </div>
 
 <div id="home-text" class="blur">
@@ -33,14 +36,9 @@ class: wide
   <div class="home-content" id="presentation">
     {{ site.data.intro.summary | markdownify }}
   </div>
-  <div class="cv-btn-container">
-    <a href="/assets/ffabiano_cv.pdf" hreflang="en" target="_blank" class="btn">English CV</a>
-    <a href="/assets/ffabiano_phd_thesis.pdf" hreflang="en" target="_blank" class="btn">Ph.D. Thesis</a>
-  </div>
 </div>
 
 
-<a href="#about_me"><span class="next" title="next section"></span></a>
 
 
 

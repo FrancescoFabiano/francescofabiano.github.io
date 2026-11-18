@@ -1,16 +1,35 @@
 // align items in #home section
 section#home {
-  min-height: calc(100vh - #{$section-margin-top} - #{$section-margin-bottom});
+  // The visible window under the header: the content is centred in what you see.
+  min-height: calc(100vh - #{$section-margin-top});
   max-height: calc(100vh);
 
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+  // Grid (assets/js/morph.js adds the arrows and the button bar): the picture with an arrow
+  // either side, the bar under it, then the text.
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) 36px;
+  column-gap: 8px;
+  align-items: center;
+  align-content: start;
 
-    & > div {
-      width: 50%;
-    }
+  & > div:first-of-type { grid-column: 2; grid-row: 1; }   // picture
+  & > .morph-arrow-prev { grid-column: 1; grid-row: 1; }
+  & > .morph-arrow-next { grid-column: 3; grid-row: 1; }
+  & > .morph-controls { grid-column: 2; grid-row: 2; }
+  & > #home-text { grid-column: 1 / -1; grid-row: 3; }
+
+  // Wide screens: left arrow, the text, the picture, right arrow; the bar under both the text
+  // and the picture.
+  @media (min-width: 1200px) {
+    grid-template-columns: 36px minmax(0, 1fr) minmax(0, 1fr) 36px;
+    grid-template-rows: 1fr auto auto 1fr;  // text, picture and bar centred as one block
+    align-content: stretch;
+
+    & > .morph-arrow-prev { grid-column: 1; grid-row: 2; }
+    & > #home-text { grid-column: 2; grid-row: 2; }
+    & > div:first-of-type { grid-column: 3; grid-row: 2; }
+    & > .morph-arrow-next { grid-column: 4; grid-row: 2; }
+    & > .morph-controls { grid-column: 2 / 4; grid-row: 3; margin-inline: 0; margin-block: 1.5rem 1rem; }
   }
 }
 

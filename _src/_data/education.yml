@@ -20,7 +20,7 @@
 
 - school: IBM Watson Research Lab
   degree: Joint Study
-  date: April 2020 - Today
+  date: April 2020 - September 2026
   link: https://research.ibm.com/labs/yorktown-heights
   description: |
     Part of an <a href='https://sites.google.com/view/sofai/home' target="_blank">IBM Watson Research Lab Group</a>, led by Dr. Rossi, comprised of researchers from IBM
@@ -34,7 +34,7 @@
 
 - school: University of Udine
   degree: Ph.D. in Computer Science
-  date: November 2018 - October 2021
+  date: November 2018 - June 2022
   link: https://www.dmif.uniud.it/en/phd-courses/imf/
   description: |
     Ph.D. focused on formalizing and developing tools for planning in multi-agent scenarios involving higher-order knowledge or beliefs.
@@ -55,8 +55,7 @@
 
     <ul class="list naked-list" style="font-size: 15px">
     <li> Research thesis title: <a target="_blank" href='../assets/ffabiano_master_thesis.pdf'><i>EFP and PG-EFP: Epistemic Forward Planners in Multi-Agent Domains</i></a></li>
-    <li> Advisors: <a target="_blank" href="https://computerscience.nmsu.edu/facultydirectory/individual-bio-pages/enrico-pontelli.html">Enrico Pontelli</a> and <a target="_blank" href="https://datascience.nmsu.edu/facultydirectory/affiliated-faculty/soncaotran.html">Son Cao Tran</a></li>
-    <li>Final GPA: 3.88</li>
+    <li> Advisor: <a target="_blank" href="https://computerscience.nmsu.edu/facultydirectory/individual-bio-pages/enrico-pontelli.html">Enrico Pontelli</a></li>
     </ul>
 
 - school: University of Parma
@@ -67,9 +66,9 @@
     Bachelor of Science program with an emphasis on theoretical computer science, logic, and foundational aspects of Artificial Intelligence, along with research fundamentals.
 
     <ul class="list naked-list" style="font-size: 15px">
+    <li> Award: Best UniPR Computer Science Student Award by UNICT & Cisita, 2015</li>
     <li> Research thesis title: <a target="_blank" href='../assets/ffabiano_bachelor_thesis.pdf'><i>Load Distribution Analysis in an MPI Framework</i></a></li>
     <li> Advisor: <a target="_blank" href="https://personale.unipr.it/en/ugovdocenti/person/15281">Alessandro Dal Palù</a></li>
-    <li> Final Mark: 109/110</li>
     </ul>
 
 - school: Liceo Scientifico G. Marconi
@@ -78,7 +77,3 @@
   link: https://www.liceomarconipr.edu.it/
   description: |
     Comprehensive program that provided a strong foundation in mathematics and helped me develop effective study skills.
-
-    <ul class="list naked-list" style="font-size: 15px">
-    <li> Final Mark: 96/100</li>
-    </ul>

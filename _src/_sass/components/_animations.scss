@@ -14,3 +14,428 @@
         opacity: 1; // End visible
     }
 }
+
+// Home page morphs (assets/js/morph.js): credit line for licensed artwork.
+.morph-credit {
+    font-size: 0.75em;
+    opacity: 0.7;
+}
+
+// Home page morphs: the bar under the picture (the Baganza river with the home and pause / play
+// buttons on it), and the arrows (placed by the grid of section#home, see pages/_home.scss).
+.morph-controls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 44px;
+    margin-block: 0.75rem 2.75rem;  // stacked layout: room for the labels and before the text
+    margin-inline: 2.5%;    // the picture is 95% wide, centred: the river ends at its edges
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.morph-ready .morph-controls {
+    opacity: 1;
+}
+
+// Scenes take turns under the picture, one per card (assets/js/morph.js): the river, then the
+// journeys (flight, road, bike, Vespa). They crossfade.
+.morph-river,
+.morph-route {
+    position: absolute;
+    inset: 0;
+    color: var(--theme-primary);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.2s ease, visibility 0s linear 1.2s;
+}
+
+.morph-scene-on {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1.2s ease, visibility 0s;
+}
+
+// The river: a faint bed, and the water (the countdown) that fills it from the source to Parma.
+.morph-river {
+
+    svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        fill: none;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+
+        path {
+            vector-effect: non-scaling-stroke;
+        }
+    }
+}
+
+.morph-river-bed {
+    opacity: 0.28;
+}
+
+.morph-river-flow {
+    clip-path: inset(0 100% 0 0);
+    transition: opacity 0.4s ease;
+}
+
+// Paused: no countdown, the whole river a little stronger; moving: the water drains away.
+.morph-manual .morph-river-bed {
+    opacity: 0.5;
+}
+
+.morph-manual .morph-river-flow,
+.morph-moving .morph-river-flow,
+.morph-manual .morph-route-flown,
+.morph-moving .morph-route-flown {
+    opacity: 0;
+}
+
+// A journey: its way (a dashed arc for the flight, a road with a soft band and a dashed centre
+// line, a dotted path for the bike), the part already travelled solid (the countdown), and the
+// vehicle on it.
+.morph-route svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    path {
+        vector-effect: non-scaling-stroke;
+    }
+}
+
+.morph-route-bed {
+    .band {
+        stroke-width: 6px;
+        opacity: 0.14;
+    }
+
+    .line {
+        stroke-width: 1px;
+        stroke-dasharray: 4 4;
+        opacity: 0.6;
+    }
+}
+
+.morph-route-flight .morph-route-bed {
+    .band { display: none; }
+    .line { stroke-width: 1.4px; stroke-dasharray: 2 6; opacity: 0.45; }
+}
+
+.morph-route-bike .morph-route-bed {
+    .band { display: none; }
+    .line { stroke-width: 1.8px; stroke-dasharray: 0.1 5; opacity: 0.6; }
+}
+
+.morph-route-flown {
+    stroke-width: 1.6px;
+    clip-path: inset(0 100% 0 0);
+    transition: opacity 0.4s ease;
+}
+
+.morph-mover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    margin: -9px 0 0 -9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: 50% 50%;
+    pointer-events: none;
+
+    svg {
+        display: block;
+    }
+
+    .fill {
+        fill: currentColor;
+        stroke: none;
+    }
+
+    .line {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.7;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+}
+
+.morph-mover .cut {
+    stroke: var(--theme-background);
+    stroke-width: 0.5;
+    stroke-linejoin: round;
+}
+
+.morph-mover .hub {
+    fill: var(--theme-background);
+}
+
+.morph-route-vespa .morph-mover svg {
+    flex: none;
+}
+
+// The Vespa is drawn larger: its wheels on the road like the car's.
+.morph-route.morph-route-vespa .morph-mover {
+    margin-top: -17px;
+}
+
+// Ground vehicles ride on top of their way, not through it.
+.morph-route-road .morph-mover,
+.morph-route-bike .morph-mover,
+.morph-route-vespa .morph-mover {
+    margin-top: -15px;
+}
+
+// Each scene's caption ("The river where I grew up", "Flying home"): spaced italic small
+// capitals, shown for 3 s when the scene comes in, then it fades away.
+.morph-controls .morph-scene-caption {
+    left: 17%;
+    top: var(--cap-top, 50%);
+    font-variant: small-caps;
+    font-size: 0.8rem;
+    letter-spacing: 0.22em;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+
+    // Narrow screens: centred over the line, clear of the buttons.
+    @media (max-width: 1199px) {
+        left: 50%;
+        top: -6px;
+        transform: translate(-50%, -100%);
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+    }
+}
+
+// The journeys' captions sit just above their way, at the left: no route can cross them.
+.morph-controls .morph-cap-above {
+    top: -6px;
+    transform: translateY(-100%);
+
+    @media (max-width: 1199px) {
+        left: 50%;
+        transform: translate(-50%, -100%);
+    }
+}
+
+.morph-controls .morph-caption-on .morph-scene-caption {
+    opacity: 0.75;
+}
+
+// Map labels, as on the drawings: small, italic, light.
+.morph-river-label {
+    position: absolute;
+    font-family: var(--sans-serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.68rem;
+    line-height: 1;
+    white-space: nowrap;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+// The river's name, as Italian maps write it: widely spaced italic small capitals, along its
+// quiet upper stretch, under the water.
+.morph-river-name {
+    left: 17%;   // starts just after Berceto
+    top: 50%;
+    font-variant: small-caps;
+    font-size: 0.8rem;
+    letter-spacing: 0.26em;
+    opacity: 0.6;
+
+    // Narrow screens: the river is short, so the name goes at its source, under the water.
+    @media (max-width: 1199px) {
+        left: 0;
+        top: calc(77% + 6px);
+        transform: none;
+        font-size: 0.68rem;
+        letter-spacing: 0.04em;
+    }
+}
+
+
+.morph-river-town {
+    transform: translateX(-50%);
+}
+
+.morph-route .morph-route-from {
+    transform: translateX(-4px);  // starts at its dot
+}
+
+// Phones: the Vespa's road drops steeply from Calestano, so its name sits a little lower.
+@media (max-width: 1199px) {
+    .morph-wide-only {
+        display: none;
+    }
+
+    .morph-route-vespa .morph-route-from {
+        margin-top: 14px;
+    }
+}
+
+.morph-river-end {
+    transform: translateX(calc(-100% + 4px));  // ends at its dot
+}
+
+.morph-river-under {
+    margin-top: 6px;
+}
+
+.morph-river-over {
+    margin-top: -6px;
+    translate: 0 -100%;
+}
+
+.morph-river-dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    margin: -2.5px 0 0 -2.5px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+// Calestano sits under the buttons when the river is short: shown on wide screens only.
+@media (max-width: 1199px) {
+    .morph-river-dot:not(.morph-river-keep),
+    .morph-river-town:not(.morph-river-keep) {
+        display: none;
+    }
+}
+
+// Buttons: outlined circles in the site's blue, solid so the river passes behind them.
+.morph-btn {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    color: color-mix(in srgb, var(--theme-primary) 80%, var(--theme-background));
+    background-color: var(--theme-background);
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 1.2s ease-in-out;
+
+    svg {
+        flex: none;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    &:hover,
+    &:focus-visible {
+        color: var(--theme-background);
+        background-color: var(--theme-primary);
+        border-color: var(--theme-primary);
+        outline: none;
+    }
+}
+
+// Pause / play. Playing: a pause icon on a light blue fill. Paused: a play icon.
+.morph-btn-auto {
+    .morph-auto-glyph {
+        display: flex;
+    }
+
+    .morph-auto-icon {
+        stroke-width: 2.6;
+    }
+
+    .morph-auto-play {
+        fill: currentColor;  // the path puts the triangle's centroid at the centre (optically centred)
+    }
+
+    &[aria-pressed="true"]:not(:hover):not(:focus-visible) {
+        color: var(--theme-primary);
+        background-color: color-mix(in srgb, var(--theme-primary) 14%, var(--theme-background));
+    }
+}
+
+.morph-clickable {
+    cursor: pointer;
+}
+
+// The flying pixels may leave the picture's box (assets/js/morph.js, BLEED): never let them
+// widen the page on small screens.
+main {
+    overflow-x: clip;
+}
+
+// Arrows, in both modes.
+.morph-arrow {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    width: 36px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: none;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.2s ease;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 13px;
+        height: 13px;
+        border-left: 2px solid var(--theme-primary);
+        border-bottom: 2px solid var(--theme-primary);
+    }
+
+    &:hover,
+    &:focus-visible {
+        opacity: 1;
+        outline: none;
+        background-color: color-mix(in srgb, var(--theme-primary) 12%, transparent);
+    }
+}
+
+.morph-arrow-prev::before {
+    transform: translate(-25%, -50%) rotate(45deg);
+}
+
+.morph-arrow-next::before {
+    transform: translate(-75%, -50%) rotate(-135deg);
+}
+
+.morph-ready .morph-arrow {
+    visibility: visible;
+    opacity: 0.6;
+}
+
+.morph-moving .morph-arrow {
+    pointer-events: none;
+}

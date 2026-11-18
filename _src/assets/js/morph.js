@@ -293,8 +293,9 @@
       requestAnimationFrame(frame);
     });
   }
-  // A card title may take no more lines than "Hi, I'm Francesco." does at this width:
-  // if it would, its font shrinks a little at a time until it fits.
+  // A card title may take no more lines than "Hi, I'm Francesco." does at this width, and no
+  // word may run past its column (e.g. "Anthropology-" next to the picture): if either would
+  // happen, its font shrinks a little at a time until it fits.
   function fitTitle() {
     const h = textEl.querySelector(".home-title");
     if (!h || textEl.innerHTML === homeHTML) return;
@@ -306,7 +307,8 @@
     probe.remove();
     let size = parseFloat(getComputedStyle(h).fontSize);
     const min = size * 0.55;
-    while (h.getBoundingClientRect().height > limit && size > min) { size *= 0.94; h.style.fontSize = size + "px"; }
+    const tooBig = () => h.getBoundingClientRect().height > limit || h.scrollWidth > h.clientWidth + 1;
+    while (tooBig() && size > min) { size *= 0.94; h.style.fontSize = size + "px"; }
   }
   // Several ways for the new text to appear, picked at random (never twice in a row).
   const WORDS = ["decode", "blur", "wipe", "rise"];

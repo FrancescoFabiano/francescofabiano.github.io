@@ -5,18 +5,30 @@ section#home {
   max-height: calc(100vh);
 
   // Grid (assets/js/morph.js adds the arrows and the button bar): the picture with an arrow
-  // either side, the bar under it, then the text.
+  // either side, then the text, and the bar at the bottom of the screen (it stays put whatever
+  // the length of each card's text).
   display: grid;
   grid-template-columns: 36px minmax(0, 1fr) 36px;
+  grid-template-rows: auto auto 1fr auto;
   column-gap: 8px;
   align-items: center;
-  align-content: start;
+  align-content: stretch;
 
   & > div:first-of-type { grid-column: 2; grid-row: 1; }   // picture
   & > .morph-arrow-prev { grid-column: 1; grid-row: 1; }
   & > .morph-arrow-next { grid-column: 3; grid-row: 1; }
-  & > .morph-controls { grid-column: 2; grid-row: 2; }
-  & > #home-text { grid-column: 1 / -1; grid-row: 3; }
+  & > #home-text { grid-column: 1 / -1; grid-row: 2; align-self: start; }
+  & > .morph-controls { grid-column: 2; grid-row: 4; align-self: end; margin-block: 2rem 1.75rem; }
+
+  // Phones: the section starts 50px down (layout/_section.scss), so it reaches the bottom of the
+  // visible screen (svh: the screen with the browser's bars showing); short phones, tighter bar.
+  @media (max-width: $sm) {
+    min-height: calc(100vh - 50px);
+    min-height: calc(100svh - 50px);
+  }
+  @media (max-width: 1199px) and (max-height: 700px) {
+    & > .morph-controls { margin-block: 1.5rem 0.75rem; }
+  }
 
   // Wide screens: left arrow, the text, the picture, right arrow; the bar under both the text
   // and the picture.

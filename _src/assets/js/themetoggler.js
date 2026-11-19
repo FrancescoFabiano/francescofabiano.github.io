@@ -9,7 +9,8 @@ const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
 document.documentElement.setAttribute('data-theme', initialTheme);
 //toggleButton.textContent = initialTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
 
-toggleButton.addEventListener('click', () => {
+// The button is commented out in _includes/links.html for now: only listen when it is there.
+if (toggleButton) toggleButton.addEventListener('click', () => {
     let currentTheme = document.documentElement.getAttribute('data-theme');
     let newTheme = currentTheme === 'light' ? 'dark' : 'light';
     

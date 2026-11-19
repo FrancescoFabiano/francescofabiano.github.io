@@ -2,7 +2,12 @@
 // into a drawing (a coat of arms, a Kripke structure, the Rome Marathon course, a quote
 // from my thesis), and the text on the left transforms to tell its story. Each pass goes
 // through every drawing once, in a random order, before the portrait comes back. Items come from _data/morph.yml
-// (JSON in #morph-data). Click a drawing to go back to the portrait. Off with prefers-reduced-motion.
+// (JSON in #morph-data). Click a drawing to go back to the portrait.
+//
+// Reduced motion (the visitor's system asks for less animation, e.g. Windows with "Animation
+// effects" off): no flying pixels and no scrambled text. The cards change as a carousel
+// instead, the picture and the text sliding a little while they crossfade. The page watches
+// the setting, so switching it while the page is open changes the next card at once.
 //
 // Left and right arrows (left of the text and right of the picture on wide screens, either
 // side of the picture on narrow ones; grid in _home.scss) step through the cycle, in a loop
@@ -16,7 +21,9 @@
   const dataEl = document.getElementById("morph-data");
   const textEl = document.getElementById("home-text");
   if (!img || !dataEl || !textEl) return;
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  // Calm mode (carousel) while the system asks for reduced motion; followed live.
+  const calmMQ = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;
+  let calm = !!(calmMQ && calmMQ.matches);
   let items;
   try { items = JSON.parse(dataEl.textContent); } catch (e) { return; }
   if (!Array.isArray(items) || !items.length) return;
@@ -27,12 +34,19 @@
   const FLY = 1400, STAGGER = 400, FADE = 200;  // pixels: about 2 s in all
   const BLEED = 0.25;               // room around the picture for the flying pixels, share of its size
   const TEXT_OUT = 300, TEXT_IN = 1700;         // text: about 2 s in all
+  const CALM_SLIDE = 900, CALM_OUT = 300, CALM_IN = 600;  // calm mode (carousel): under 1 s
+  const CALM_SHIFT = 0.12;          // how far the pictures slide in calm mode, share of the width
   const BLOCK = 2.5;                // size of one particle, CSS px
   const PAD = 0.07;                 // margin around a drawing, share of the box
 
   const host = img.parentElement;
   if (getComputedStyle(host).position === "static") host.style.position = "relative";
-  const stage = host.closest("section") || host;  // holds the arrows and the bar; carries morph-ready / morph-moving
+  const stage = host.closest("section") || host;  // holds the arrows and the bar; carries morph-ready / morph-moving / morph-calm
+  stage.classList.toggle("morph-calm", calm);
+  if (calmMQ) {
+    const onCalm = (e) => { calm = e.matches; stage.classList.toggle("morph-calm", calm); };
+    if (calmMQ.addEventListener) calmMQ.addEventListener("change", onCalm); else if (calmMQ.addListener) calmMQ.addListener(onCalm);
+  }
   // Click a drawing to go back to the portrait (on the picture's box: the canvas lets clicks through).
   host.addEventListener("click", () => { if (shown >= 0 && !busy) go(-1); });
   const color = () => (getComputedStyle(document.documentElement).getPropertyValue("--theme-primary") || "#2E9CCA").trim() || "#2E9CCA";
@@ -350,7 +364,20 @@
       });
     });
   }
-  const swapText = (html) => new Promise((done) => {
+  // Calm mode: the old text slides a little the way the cards go and fades, the new one
+  // comes in from the other side (d = 1 forwards, -1 backwards).
+  const slideText = (html, d) => new Promise((done) => {
+    const out = textEl.animate([{ opacity: 1, transform: "none" }, { opacity: 0, transform: `translateX(${-d * 24}px)` }],
+      { duration: CALM_OUT, fill: "forwards", easing: "ease-in" });
+    out.onfinish = () => {
+      textEl.innerHTML = html;
+      fitTitle();
+      out.cancel();
+      textEl.animate([{ opacity: 0, transform: `translateX(${d * 24}px)` }, { opacity: 1, transform: "none" }],
+        { duration: CALM_IN, easing: "cubic-bezier(.2,.7,.2,1)" }).onfinish = done;
+    };
+  });
+  const swapText = (html, d) => calm ? slideText(html, d) : new Promise((done) => {
     const out = textEl.animate([{ opacity: 1, filter: "blur(0)" }, { opacity: 0, filter: "blur(8px)" }],
       { duration: TEXT_OUT, fill: "forwards", easing: "ease-in" });
     out.onfinish = () => {
@@ -531,9 +558,34 @@
     });
   }
 
+  // Calm mode: a carousel step inside the picture's box. The old picture slides out a little
+  // and fades while the new one slides in from the other side (d = 1 forwards, -1 backwards).
+  function slide(cv, from, to, d) {
+    return new Promise((done) => {
+      const ctx = cv.getContext("2d");
+      const W = to.canvas.width, H = to.canvas.height;
+      const mx = (cv.width - W) / 2, my = (cv.height - H) / 2, dx = W * CALM_SHIFT * d, t0 = performance.now();
+      const frame = (now) => {
+        const t = ease(Math.min(1, (now - t0) / CALM_SLIDE));
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.clearRect(0, 0, cv.width, cv.height);
+        ctx.save();
+        ctx.translate(mx, my);
+        ctx.beginPath(); ctx.rect(0, 0, W, H); ctx.clip();  // nothing shows outside the picture's box
+        ctx.globalAlpha = 1 - t; ctx.drawImage(from.canvas, -dx * t, 0);
+        ctx.globalAlpha = t; ctx.drawImage(to.canvas, dx * (1 - t), 0);
+        ctx.restore();
+        if (t < 1) requestAnimationFrame(frame); else done();
+      };
+      requestAnimationFrame(frame);
+    });
+  }
+
   // ---- Moving between the portrait (-1) and the items. ----
+  let dir = 1;  // 1 forwards, -1 backwards (set by back()); only the carousel uses it
   async function go(target) {
     if (busy || target === shown) return;
+    const d = dir; dir = 1;
     busy = true; clearTimeout(timer);
     try {
       const g = geometry();
@@ -555,7 +607,9 @@
       if (flowAnim) flowAnim.cancel();
       cancelAnimationFrame(planeRaf);
       showScene((scene + 1) % scenes.length);
-      await Promise.all([fly(canvas, from, to), swapText(target < 0 ? homeHTML : itemHTML(items[target]))]);
+      const carousel = calm || forceFlight === "slide";
+      await Promise.all([carousel ? slide(canvas, from, to, d) : fly(canvas, from, to),
+        (carousel ? slideText : swapText)(target < 0 ? homeHTML : itemHTML(items[target]), d)]);
       shown = target;
       if (manual && target < 0) pos = -1;  // the manual loop starts again at the intro
       if (target < 0) { canvas.remove(); canvas = null; img.style.visibility = ""; }
@@ -581,6 +635,7 @@
 
   // Left arrow: previous card; from the first card to the intro, from the intro to the last card.
   function back() {
+    dir = -1;
     if (shown < 0) { pos = seq.length - 1; return go(seq[pos]); }
     if (pos <= 0) { pos = -1; return go(-1); }
     pos--;
@@ -644,6 +699,7 @@
   });
 
   // Test hook: window.__morph(i, flight, words) shows item i now (-1 or nothing: the portrait).
+  // flight "slide" forces the calm-mode carousel step.
   window.__morph = (i, flight = "", words = "") => { forceFlight = flight; forceWords = words; return go(i === undefined ? -1 : i).finally(() => { forceFlight = forceWords = ""; }); };
 
   (img.complete && img.naturalWidth ? Promise.resolve() : img.decode())

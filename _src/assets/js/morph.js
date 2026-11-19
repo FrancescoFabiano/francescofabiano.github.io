@@ -110,7 +110,13 @@
   const ICON = {
     plane: '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path class="fill" d="M21 12.2c0-.7-.6-1.2-1.3-1.2H15L10.4 3.6H8.6l2.2 7.4H6.3L4.6 8.8H3.2l1 3.4-1 3.4h1.4l1.7-2.2h4.5l-2.2 7.4h1.8L15 13.4h4.7c.7 0 1.3-.5 1.3-1.2z"/></svg>',
     car: '<svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path class="fill" d="M3 15.6v-2.4c0-.6.4-1.1 1-1.3l2.4-.7 2.2-2.6c.4-.5 1-.7 1.6-.7h4.4c.6 0 1.2.3 1.6.8l2 2.5 1.9.5c.6.2 1 .7 1 1.3v2.6h-1.6a2.4 2.4 0 0 0-4.8 0H9.4a2.4 2.4 0 0 0-4.8 0z"/><circle class="fill" cx="7" cy="15.8" r="1.7"/><circle class="fill" cx="16.9" cy="15.8" r="1.7"/></svg>',
-    bike: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><g class="line"><circle cx="5.8" cy="15.5" r="3.6"/><circle cx="18.2" cy="15.5" r="3.6"/><path d="M5.8 15.5 9.6 8.6h5.6l3 6.9M9.6 8.6l2.9 6.9H5.8M14.2 6.4h2.2M8.4 7h2.6"/></g></svg>',
+    // The bike and its rider, leaning forward, hands on the bars (limbs with background-coloured halos).
+    bike: '<svg viewBox="0 -5 24 26" width="23" height="25" aria-hidden="true"><g class="line">' +
+      '<circle cx="5.8" cy="15.5" r="3.6"/><circle cx="18.2" cy="15.5" r="3.6"/><path d="M5.8 15.5 9.6 8.6h5.6l3 6.9M9.6 8.6l2.9 6.9H5.8M8.4 7h2.6"/></g>' +
+      [["M9.6 6.4 13.4 9.4 12.6 14.8", 2.2], ["M9.4 6.2 13.6 1.9", 2.8], ["M13.6 1.9 16.3 6.2", 1.4]].map(([d, w]) =>
+        `<path class="halo" d="${d}" stroke-width="${w + 1.2}"/><path class="limb" d="${d}" stroke-width="${w}"/>`).join("") +
+      '<circle class="hub" cx="15.4" cy="-.5" r="2.4"/><circle class="fill" cx="15.4" cy="-.5" r="1.8"/>' +
+      '<g class="line"><path d="M14.2 6.4h2.6"/></g></svg>',
     // A classic small-frame Vespa: round rear cowl and seat, leg shield, front mudguard, headlamp on
     // the handlebar, and its rider sitting upright. Thin cuts in the page's background colour keep
     // the parts apart.

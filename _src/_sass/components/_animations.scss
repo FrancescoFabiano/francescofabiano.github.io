@@ -208,6 +208,11 @@
     flex: none;
 }
 
+// The bike with its rider is taller: its wheels on the road like the car's.
+.morph-route.morph-route-bike .morph-mover {
+    margin-top: -20px;
+}
+
 // The Vespa is drawn larger: its wheels on the road like the car's.
 .morph-route.morph-route-vespa .morph-mover {
     margin-top: -20px;

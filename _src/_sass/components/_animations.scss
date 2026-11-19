@@ -188,13 +188,29 @@
     fill: var(--theme-background);
 }
 
+// The Vespa's rider: limbs as round strokes, each with a halo in the background colour.
+.morph-mover .halo,
+.morph-mover .limb {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.morph-mover .halo {
+    stroke: var(--theme-background);
+}
+
+.morph-mover .limb {
+    stroke: currentColor;
+}
+
 .morph-route-vespa .morph-mover svg {
     flex: none;
 }
 
 // The Vespa is drawn larger: its wheels on the road like the car's.
 .morph-route.morph-route-vespa .morph-mover {
-    margin-top: -17px;
+    margin-top: -20px;
 }
 
 // Ground vehicles ride on top of their way, not through it.
